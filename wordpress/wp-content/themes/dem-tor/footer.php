@@ -67,9 +67,7 @@
                 // --- 1. Navbar Morphing Logic ---
                 const header = document.getElementById('site-header');
                 const navLogoWrapper = document.getElementById('nav-logo');
-                const navLogotype = document.getElementById('nav-logotype');
                 const navLinks = document.querySelectorAll('.nav-link');
-                const navCta = document.getElementById('nav-cta');
                 const mobileBtn = document.getElementById('mobile-menu-btn');
 
                 ScrollTrigger.create({
@@ -81,34 +79,21 @@
                             // Apply morphed state
                             header.classList.add('bg-[#002366]/60', 'backdrop-blur-xl', 'border-white/20', 'shadow-2xl');
                             
-                            // Text Colors
-                            navLogotype.classList.remove('text-white');
-                            navLogotype.classList.add('text-[#D4AF37]');
-                            
                             navLinks.forEach(l => {
                                 l.classList.remove('text-white/80', 'hover:text-white');
                                 l.classList.add('text-white/70', 'hover:text-[#D4AF37]');
                             });
 
-                            navCta.classList.remove('bg-white', 'text-black');
-                            navCta.classList.add('bg-[#D4AF37]', 'text-black');
-                            
                             mobileBtn.classList.remove('text-white');
                             mobileBtn.classList.add('text-[#D4AF37]');
                         } else if(self.progress === 0) {
                             // Revert to original
                             header.classList.remove('bg-[#002366]/60', 'backdrop-blur-xl', 'border-white/20', 'shadow-2xl');
                             
-                            navLogotype.classList.add('text-white');
-                            navLogotype.classList.remove('text-[#D4AF37]');
-
                             navLinks.forEach(l => {
                                 l.classList.add('text-white/80', 'hover:text-white');
                                 l.classList.remove('text-white/70', 'hover:text-[#D4AF37]');
                             });
-
-                            navCta.classList.add('bg-white', 'text-black');
-                            navCta.classList.remove('bg-[#D4AF37]', 'text-black');
 
                             mobileBtn.classList.add('text-white');
                             mobileBtn.classList.remove('text-[#D4AF37]');

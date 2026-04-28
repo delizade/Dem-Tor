@@ -24,12 +24,11 @@
 </div>
 
 <!-- Navbar - "The Floating Island" -->
-<header id="site-header" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl rounded-full transition-all duration-500 ease-out border border-transparent">
+<header id="site-header" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-7xl rounded-2xl transition-all duration-500 ease-out border border-transparent">
     <div class="flex items-center justify-between px-6 py-3">
         <!-- Logo Area -->
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="flex items-center gap-3 group hover-lift z-10 relative">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="flex items-center group hover-lift z-10 relative">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-10 w-auto object-contain brightness-0 invert transition-all duration-500" id="nav-logo" />
-            <span class="font-display text-xl tracking-tight text-white transition-colors duration-500" id="nav-logotype">DEM-TOR</span>
         </a>
 
         <!-- Desktop Navigation -->
@@ -40,11 +39,9 @@
             <a href="#iletisim" class="text-white/80 hover:text-white transition-colors text-sm font-medium tracking-wide nav-link">İletişim</a>
         </nav>
 
-        <!-- CTA Button -->
+        <!-- Right Text Info -->
         <div class="hidden md:block z-10 relative">
-            <a href="#iletisim" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-white text-black font-semibold text-sm btn-magnetic transition-colors duration-500 hover:bg-[#D4AF37]" id="nav-cta">
-                <span class="relative z-10">Hemen Bayi Olun</span>
-            </a>
+            <span class="font-sans text-sm tracking-widest text-[#D4AF37] uppercase font-medium">Efes Pilsen Dağıtıcı Bayii</span>
         </div>
 
         <!-- Mobile Menu Toggle -->

@@ -63,12 +63,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </div>
 
 <!-- Navbar - "The Floating Island" -->
-<header id="site-header" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl rounded-full transition-all duration-500 ease-out border border-transparent">
+<header id="site-header" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-7xl rounded-2xl transition-all duration-500 ease-out border border-transparent">
     <div class="flex items-center justify-between px-6 py-3">
         <!-- Logo Area -->
-        <a href="#/" class="flex items-center gap-3 group hover-lift z-10 relative">
+        <a href="#/" class="flex items-center group hover-lift z-10 relative">
             <img src="assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-10 w-auto object-contain brightness-0 invert transition-all duration-500" id="nav-logo" />
-            <span class="font-display text-xl tracking-tight text-white transition-colors duration-500" id="nav-logotype">DEM-TOR</span>
         </a>
 
         <!-- Desktop Navigation -->
@@ -79,11 +78,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             <a href="#iletisim" class="text-white/80 hover:text-white transition-colors text-sm font-medium tracking-wide nav-link">İletişim</a>
         </nav>
 
-        <!-- CTA Button -->
+        <!-- Right Text Info -->
         <div class="hidden md:block z-10 relative">
-            <a href="#iletisim" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-white text-black font-semibold text-sm btn-magnetic transition-colors duration-500 hover:bg-[#D4AF37]" id="nav-cta">
-                <span class="relative z-10">Hemen Bayi Olun</span>
-            </a>
+            <span class="font-sans text-sm tracking-widest text-[#D4AF37] uppercase font-medium">Efes Pilsen Dağıtıcı Bayii</span>
         </div>
 
         <!-- Mobile Menu Toggle -->
@@ -414,9 +411,7 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
                 // --- 1. Navbar Morphing Logic ---
                 const header = document.getElementById('site-header');
                 const navLogoWrapper = document.getElementById('nav-logo');
-                const navLogotype = document.getElementById('nav-logotype');
                 const navLinks = document.querySelectorAll('.nav-link');
-                const navCta = document.getElementById('nav-cta');
                 const mobileBtn = document.getElementById('mobile-menu-btn');
 
                 ScrollTrigger.create({
@@ -428,34 +423,21 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
                             // Apply morphed state
                             header.classList.add('bg-[#002366]/60', 'backdrop-blur-xl', 'border-white/20', 'shadow-2xl');
                             
-                            // Text Colors
-                            navLogotype.classList.remove('text-white');
-                            navLogotype.classList.add('text-[#D4AF37]');
-                            
                             navLinks.forEach(l => {
                                 l.classList.remove('text-white/80', 'hover:text-white');
                                 l.classList.add('text-white/70', 'hover:text-[#D4AF37]');
                             });
 
-                            navCta.classList.remove('bg-white', 'text-black');
-                            navCta.classList.add('bg-[#D4AF37]', 'text-black');
-                            
                             mobileBtn.classList.remove('text-white');
                             mobileBtn.classList.add('text-[#D4AF37]');
                         } else if(self.progress === 0) {
                             // Revert to original
                             header.classList.remove('bg-[#002366]/60', 'backdrop-blur-xl', 'border-white/20', 'shadow-2xl');
                             
-                            navLogotype.classList.add('text-white');
-                            navLogotype.classList.remove('text-[#D4AF37]');
-
                             navLinks.forEach(l => {
                                 l.classList.add('text-white/80', 'hover:text-white');
                                 l.classList.remove('text-white/70', 'hover:text-[#D4AF37]');
                             });
-
-                            navCta.classList.add('bg-white', 'text-black');
-                            navCta.classList.remove('bg-[#D4AF37]', 'text-black');
 
                             mobileBtn.classList.add('text-white');
                             mobileBtn.classList.remove('text-[#D4AF37]');
