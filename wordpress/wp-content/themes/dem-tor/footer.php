@@ -156,10 +156,12 @@
             // Tab Component Logic
             const tabs = document.querySelectorAll('.company-tab-btn');
             const tabContents = document.querySelectorAll('.tab-content');
+            const tabsWrapper = document.getElementById('tabs-wrapper');
 
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     const targetId = tab.getAttribute('data-target');
+                    const newContent = document.getElementById(targetId);
                     
                     // Reset Active Tabs
                     tabs.forEach(t => t.classList.remove('tab-active', 'border-white/30'));
@@ -167,6 +169,11 @@
                     
                     tab.classList.add('tab-active', 'border-white/30');
                     tab.classList.remove('border-transparent', 'hover:border-white/20');
+
+                    // Set dynamic height for wrapper
+                    if (tabsWrapper && newContent) {
+                        tabsWrapper.style.height = newContent.offsetHeight + 'px';
+                    }
 
                     // Animation Logic
                     tabContents.forEach(content => {
@@ -203,6 +210,15 @@
 
             // Initialize first tab
             if(tabs.length > 0) tabs[0].click();
+
+            // Handle window resize for dynamic height
+            window.addEventListener('resize', () => {
+                const activeTab = document.querySelector('.company-tab-btn.tab-active');
+                if (activeTab && tabsWrapper) {
+                    const activeContent = document.getElementById(activeTab.getAttribute('data-target'));
+                    if (activeContent) tabsWrapper.style.height = activeContent.offsetHeight + 'px';
+                }
+            });
 
             return () => ctx.revert(); // Cleanup GSAP on unmount/reload
         });
