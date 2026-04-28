@@ -143,10 +143,10 @@ get_header(); ?>
         </div>
 
         <!-- Tab Contents Container -->
-        <div class="relative min-h-[400px] border border-white/10 rounded-3xl bg-white/[0.02] p-8 md:p-12">
+        <div class="relative min-h-[400px] border border-white/10 rounded-3xl bg-white/[0.02] p-8 md:p-12 grid grid-cols-1 grid-rows-1 items-start">
             
             <!-- Tab 01: Genel Bilgiler -->
-            <div id="tab-genel" class="tab-content hidden w-full">
+            <div id="tab-genel" class="tab-content w-full col-start-1 row-start-1 opacity-0 invisible z-10">
                 <h3 class="font-display text-3xl text-white mb-8 border-b border-white/10 pb-4">Şirket Künyesi</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 font-sans text-white/80">
                     <div><span class="text-white/40 block text-xs uppercase tracking-widest mb-1">Ticaret Ünvanı</span>Dem-Tor Gıda Meşrubat Pazarlama ve Dağıtım Ticaret Limited Şirketi</div>
@@ -159,7 +159,7 @@ get_header(); ?>
             </div>
 
             <!-- Tab 02: Yönetim Kurulu -->
-            <div id="tab-yonetim" class="tab-content hidden w-full">
+            <div id="tab-yonetim" class="tab-content w-full col-start-1 row-start-1 opacity-0 invisible z-10">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Member 1 -->
                     <div class="sleek-box aspect-[3/4] relative group">
@@ -192,7 +192,7 @@ get_header(); ?>
             </div>
 
             <!-- Tab 03: Denetçi -->
-            <div id="tab-denetci" class="tab-content hidden w-full">
+            <div id="tab-denetci" class="tab-content w-full col-start-1 row-start-1 opacity-0 invisible z-10">
                 <h3 class="font-display text-3xl text-white mb-6 border-b border-white/10 pb-4">Denetim Statüsü</h3>
                 <p class="font-sans text-lg text-white/70 leading-relaxed max-w-2xl">
                     Bağımsız denetim kriterleri çerçevesinde yürütülen operasyonlarımız ve MKK e-ŞİRKET portalı üzerinden erişilebilir yasal denetçi bilgilerimiz. Şeffaflık ve hesap verilebilirlik ilkelerimiz doğrultusunda tüm denetim süreçlerimiz uluslararası standartlarda gerçekleştirilmektedir.
@@ -200,7 +200,7 @@ get_header(); ?>
             </div>
 
             <!-- Tab 04: Belge Görüntüleme -->
-            <div id="tab-belge" class="tab-content hidden w-full">
+            <div id="tab-belge" class="tab-content w-full col-start-1 row-start-1 opacity-0 invisible z-10">
                 <h3 class="font-display text-3xl text-white mb-8 border-b border-white/10 pb-4">Dijital Arşiv</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     <a href="#" class="sleek-box p-6 bg-white/5 hover:bg-white/10 transition-colors border-white/10 group flex flex-col items-center text-center">

@@ -171,27 +171,29 @@
                     // Animation Logic
                     tabContents.forEach(content => {
                         if (content.id === targetId) {
-                            content.classList.remove('hidden');
+                            content.style.zIndex = 20;
                             gsap.fromTo(content, 
-                                { y: 20, opacity: 0 }, 
-                                { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" }
+                                { y: 20, autoAlpha: 0 }, 
+                                { y: 0, autoAlpha: 1, duration: 0.6, ease: "power2.out", overwrite: "auto" }
                             );
 
                             // Trigger specific internal animations
                             if (targetId === 'tab-yonetim') {
                                 gsap.fromTo(content.querySelectorAll('.sleek-box'),
                                     { y: 20, opacity: 0 },
-                                    { y: 0, opacity: 1, duration: 0.8, stagger: 0.1, ease: "power3.out", delay: 0.2 }
+                                    { y: 0, opacity: 1, duration: 0.8, stagger: 0.1, ease: "power3.out", delay: 0.2, overwrite: "auto" }
                                 );
                             }
                         } else {
-                            if(!content.classList.contains('hidden')) {
+                            // Only animate out if it is currently visible
+                            if(gsap.getProperty(content, "visibility") !== "hidden" && gsap.getProperty(content, "opacity") > 0) {
+                                content.style.zIndex = 10;
                                 gsap.to(content, {
-                                    y: 20, 
-                                    opacity: 0, 
+                                    y: -20, 
+                                    autoAlpha: 0, 
                                     duration: 0.4, 
                                     ease: "power2.in",
-                                    onComplete: () => content.classList.add('hidden')
+                                    overwrite: "auto"
                                 });
                             }
                         }
