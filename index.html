@@ -521,14 +521,14 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
                             content.style.zIndex = 20;
                             gsap.fromTo(content, 
                                 { y: 20, autoAlpha: 0 }, 
-                                { y: 0, autoAlpha: 1, duration: 0.6, ease: "power2.out", overwrite: "auto" }
+                                { y: 0, autoAlpha: 1, duration: 0.5, delay: 0.15, ease: "power2.out", overwrite: "auto" }
                             );
 
                             // Trigger specific internal animations
                             if (targetId === 'tab-yonetim') {
                                 gsap.fromTo(content.querySelectorAll('.sleek-box'),
                                     { y: 20, opacity: 0 },
-                                    { y: 0, opacity: 1, duration: 0.8, stagger: 0.1, ease: "power3.out", delay: 0.2, overwrite: "auto" }
+                                    { y: 0, opacity: 1, duration: 0.8, stagger: 0.1, ease: "power3.out", delay: 0.35, overwrite: "auto" }
                                 );
                             }
                         } else {
@@ -538,7 +538,7 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
                                 gsap.to(content, {
                                     y: -20, 
                                     autoAlpha: 0, 
-                                    duration: 0.4, 
+                                    duration: 0.2, 
                                     ease: "power2.in",
                                     overwrite: "auto"
                                 });
