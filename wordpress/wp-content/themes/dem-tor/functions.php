@@ -23,7 +23,7 @@ function demtor_scripts() {
     wp_enqueue_style( 'demtor-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto+Slab:wght@500;800&family=Syne:wght@400;700;800&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap', array(), null );
 
     // Theme CSS
-    wp_enqueue_style( 'demtor-style', get_stylesheet_uri(), array(), '1.0.0' );
+    wp_enqueue_style( 'demtor-style', get_stylesheet_uri(), array(), '1.0.1' );
 
     // GSAP
     wp_enqueue_script( 'gsap-core', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js', array(), '3.12.2', true );
