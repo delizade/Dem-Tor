@@ -265,29 +265,29 @@ get_header(); ?>
         <h2 class="font-display text-4xl md:text-5xl text-center text-white mb-16 gsap-fade-up">Şirket Bilgileri</h2>
         
         <!-- Tab Controls (Minimalist Typographic) -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12 mb-20 justify-center gsap-fade-up relative z-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-6 md:gap-y-12 mb-10 md:mb-20 justify-center gsap-fade-up relative z-20">
             <!-- 01 -->
-            <button class="company-tab-btn group flex flex-col text-left pt-6 border-t-[3px] border-white/10 hover:border-[#11C6DB]/40 transition-all duration-500" data-target="tab-genel">
-                <span class="tab-number font-mono text-xs md:text-sm tracking-[0.3em] text-white/30 group-hover:text-[#11C6DB] transition-colors duration-500 mb-4 block">01</span>
-                <span class="tab-title font-display text-base md:text-lg uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-500">Genel Bilgiler</span>
+            <button class="company-tab-btn group flex flex-col text-left pt-3 md:pt-6 border-t-[2px] md:border-t-[3px] border-white/10 hover:border-[#11C6DB]/40 transition-all duration-500" data-target="tab-genel">
+                <span class="tab-number font-mono text-[10px] md:text-sm tracking-[0.3em] text-white/30 group-hover:text-[#11C6DB] transition-colors duration-500 mb-1 md:mb-4 block">01</span>
+                <span class="tab-title font-display text-xs md:text-lg uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-500">Genel Bilgiler</span>
             </button>
             
             <!-- 02 -->
-            <button class="company-tab-btn group flex flex-col text-left pt-6 border-t-[3px] border-white/10 hover:border-[#11C6DB]/40 transition-all duration-500" data-target="tab-yonetim">
-                <span class="tab-number font-mono text-xs md:text-sm tracking-[0.3em] text-white/30 group-hover:text-[#11C6DB] transition-colors duration-500 mb-4 block">02</span>
-                <span class="tab-title font-display text-base md:text-lg uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-500">Yönetim Kurulu</span>
+            <button class="company-tab-btn group flex flex-col text-left pt-3 md:pt-6 border-t-[2px] md:border-t-[3px] border-white/10 hover:border-[#11C6DB]/40 transition-all duration-500" data-target="tab-yonetim">
+                <span class="tab-number font-mono text-[10px] md:text-sm tracking-[0.3em] text-white/30 group-hover:text-[#11C6DB] transition-colors duration-500 mb-1 md:mb-4 block">02</span>
+                <span class="tab-title font-display text-xs md:text-lg uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-500">Yönetim Kurulu</span>
             </button>
             
             <!-- 03 -->
-            <button class="company-tab-btn group flex flex-col text-left pt-6 border-t-[3px] border-white/10 hover:border-[#11C6DB]/40 transition-all duration-500" data-target="tab-denetci">
-                <span class="tab-number font-mono text-xs md:text-sm tracking-[0.3em] text-white/30 group-hover:text-[#11C6DB] transition-colors duration-500 mb-4 block">03</span>
-                <span class="tab-title font-display text-base md:text-lg uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-500">Denetçi</span>
+            <button class="company-tab-btn group flex flex-col text-left pt-3 md:pt-6 border-t-[2px] md:border-t-[3px] border-white/10 hover:border-[#11C6DB]/40 transition-all duration-500" data-target="tab-denetci">
+                <span class="tab-number font-mono text-[10px] md:text-sm tracking-[0.3em] text-white/30 group-hover:text-[#11C6DB] transition-colors duration-500 mb-1 md:mb-4 block">03</span>
+                <span class="tab-title font-display text-xs md:text-lg uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-500">Denetçi</span>
             </button>
             
             <!-- 04 -->
-            <button class="company-tab-btn group flex flex-col text-left pt-6 border-t-[3px] border-white/10 hover:border-[#11C6DB]/40 transition-all duration-500" data-target="tab-belge">
-                <span class="tab-number font-mono text-xs md:text-sm tracking-[0.3em] text-white/30 group-hover:text-[#11C6DB] transition-colors duration-500 mb-4 block">04</span>
-                <span class="tab-title font-display text-base md:text-lg uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-500">Belge Arşivi</span>
+            <button class="company-tab-btn group flex flex-col text-left pt-3 md:pt-6 border-t-[2px] md:border-t-[3px] border-white/10 hover:border-[#11C6DB]/40 transition-all duration-500" data-target="tab-belge">
+                <span class="tab-number font-mono text-[10px] md:text-sm tracking-[0.3em] text-white/30 group-hover:text-[#11C6DB] transition-colors duration-500 mb-1 md:mb-4 block">04</span>
+                <span class="tab-title font-display text-xs md:text-lg uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-500">Belge Arşivi</span>
             </button>
         </div>
 
