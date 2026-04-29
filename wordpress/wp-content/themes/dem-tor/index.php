@@ -91,7 +91,7 @@ get_header(); ?>
 
         <div id="stats-container" class="grid grid-cols-2 lg:grid-cols-4 gap-3">
             <!-- Stat Card 1 -->
-            <div class="stat-card bg-gradient-to-tr from-[#11C6DB] from-30% to-[#e7e2d6] rounded-[2rem] md:rounded-[2.5rem] p-5 sm:p-8 shadow-2xl shadow-[#11C6DB]/20 flex flex-col justify-end items-start relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 min-h-[200px] sm:min-h-[250px] lg:min-h-[300px]">
+            <div class="stat-card bg-gradient-to-tr from-[#11C6DB] from-30% to-[#e7e2d6] rounded-[2rem] md:rounded-[2.5rem] p-5 sm:p-8 shadow-2xl shadow-[#11C6DB]/20 flex flex-col justify-end items-start relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 aspect-square md:aspect-auto md:min-h-[250px] lg:min-h-[300px]">
                     <!-- Smooth Hover Background -->
                     <div class="absolute inset-0 bg-gradient-to-tr from-[#11C6DB] from-30% to-[#20D5EB] opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out pointer-events-none z-0"></div>
                     <svg class="absolute inset-0 w-full h-full text-white/20 pointer-events-none z-0" preserveAspectRatio="none" viewBox="0 0 100 100">
@@ -105,7 +105,7 @@ get_header(); ?>
             </div>
             
             <!-- Stat Card 2 -->
-            <div class="stat-card bg-gradient-to-tr from-[#11C6DB] from-30% to-[#e7e2d6] rounded-[2rem] md:rounded-[2.5rem] p-5 sm:p-8 shadow-2xl shadow-[#11C6DB]/20 flex flex-col justify-end items-start relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 min-h-[200px] sm:min-h-[250px] lg:min-h-[300px]">
+            <div class="stat-card bg-gradient-to-tr from-[#11C6DB] from-30% to-[#e7e2d6] rounded-[2rem] md:rounded-[2.5rem] p-5 sm:p-8 shadow-2xl shadow-[#11C6DB]/20 flex flex-col justify-end items-start relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 aspect-square md:aspect-auto md:min-h-[250px] lg:min-h-[300px]">
                     <!-- Smooth Hover Background -->
                     <div class="absolute inset-0 bg-gradient-to-tr from-[#11C6DB] from-30% to-[#20D5EB] opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out pointer-events-none z-0"></div>
                     <svg class="absolute inset-0 w-full h-full text-white/20 pointer-events-none z-0" preserveAspectRatio="none" viewBox="0 0 100 100">
@@ -119,7 +119,7 @@ get_header(); ?>
             </div>
 
             <!-- Stat Card 3 -->
-            <div class="stat-card bg-gradient-to-tr from-[#11C6DB] from-30% to-[#e7e2d6] rounded-[2rem] md:rounded-[2.5rem] p-5 sm:p-8 shadow-2xl shadow-[#11C6DB]/20 flex flex-col justify-end items-start relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 min-h-[200px] sm:min-h-[250px] lg:min-h-[300px]">
+            <div class="stat-card bg-gradient-to-tr from-[#11C6DB] from-30% to-[#e7e2d6] rounded-[2rem] md:rounded-[2.5rem] p-5 sm:p-8 shadow-2xl shadow-[#11C6DB]/20 flex flex-col justify-end items-start relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 aspect-square md:aspect-auto md:min-h-[250px] lg:min-h-[300px]">
                     <!-- Smooth Hover Background -->
                     <div class="absolute inset-0 bg-gradient-to-tr from-[#11C6DB] from-30% to-[#20D5EB] opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out pointer-events-none z-0"></div>
                     <svg class="absolute inset-0 w-full h-full text-white/20 pointer-events-none z-0" preserveAspectRatio="none" viewBox="0 0 100 100">
@@ -133,7 +133,7 @@ get_header(); ?>
             </div>
 
             <!-- Stat Card 4 -->
-            <div class="stat-card bg-gradient-to-tr from-[#11C6DB] from-30% to-[#e7e2d6] rounded-[2rem] md:rounded-[2.5rem] p-5 sm:p-8 shadow-2xl shadow-[#11C6DB]/20 flex flex-col justify-end items-start relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 min-h-[200px] sm:min-h-[250px] lg:min-h-[300px]">
+            <div class="stat-card bg-gradient-to-tr from-[#11C6DB] from-30% to-[#e7e2d6] rounded-[2rem] md:rounded-[2.5rem] p-5 sm:p-8 shadow-2xl shadow-[#11C6DB]/20 flex flex-col justify-end items-start relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 aspect-square md:aspect-auto md:min-h-[250px] lg:min-h-[300px]">
                     <!-- Smooth Hover Background -->
                     <div class="absolute inset-0 bg-gradient-to-tr from-[#11C6DB] from-30% to-[#20D5EB] opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out pointer-events-none z-0"></div>
                     <svg class="absolute inset-0 w-full h-full text-white/20 pointer-events-none z-0" preserveAspectRatio="none" viewBox="0 0 100 100">
@@ -144,7 +144,7 @@ get_header(); ?>
                         <h4 class="font-sans text-sm sm:text-xl lg:text-[1.5rem] font-bold text-[#004562] group-hover:text-[#E4F7FF] transition-colors duration-500 ease-out leading-snug">Uzman<br/>personel</h4>
                         <div class="font-display font-bold text-4xl sm:text-5xl lg:text-[4.5rem] text-[#004562] group-hover:text-[#E4F7FF] transition-colors duration-500 delay-100 ease-out leading-none tracking-tight relative z-0">41</div>
                     </div>
-                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -381,10 +381,10 @@ get_header(); ?>
 </section>
 
 <!-- 6. CONTACT FORM -->
-<section class="pt-24 md:pt-32 pb-16 md:pb-20 bg-[#DFDAD0] text-[#111111] relative z-10">
-    <div class="max-w-4xl mx-auto px-6 gsap-fade-up">
-        <div class="bg-[#FCFBF9] border border-[#111111]/10 rounded-[3rem] p-10 md:p-16 sleek-box shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <div class="text-center mb-20 md:mb-24">
+<section class="pt-24 md:pt-32 pb-16 md:pb-20 bg-[#FCFBF9] md:bg-[#DFDAD0] text-[#111111] relative z-10">
+    <div class="max-w-4xl mx-auto px-6 md:px-0 gsap-fade-up">
+        <div class="md:bg-[#FCFBF9] md:border md:border-[#111111]/10 md:rounded-[3rem] md:p-16 md:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <div class="text-center mb-16 md:mb-24">
                 <h2 class="font-display text-4xl md:text-5xl text-[#002366] mb-4">İletişime Geçin</h2>
                 <p class="font-sans text-lg text-[#111111]/60">Her türlü soru, görüş ve iş ortaklığı talebiniz için formu doldurabilirsiniz.</p>
             </div>
