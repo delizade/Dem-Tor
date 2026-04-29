@@ -159,7 +159,7 @@ get_header(); ?>
 <section class="pt-0 pb-12 md:pb-16 bg-[#E8E4DD] relative z-10 cursor-grab active:cursor-grabbing block">
     
     <!-- Swiper Container -->
-    <div class="swiper swiper-ticker media-carousel w-full overflow-visible relative z-10">
+    <div class="swiper swiper-ticker media-carousel w-full overflow-hidden relative z-10">
         <div class="swiper-wrapper flex items-center">
             
             <?php 
