@@ -7,7 +7,7 @@
         
         <div class="max-w-7xl mx-auto px-0 md:px-6 relative z-10">
             <!-- Modern Light-Gradient Box on Beige Background (No Stroke) -->
-            <div class="stat-card md:bg-gradient-to-tr md:from-[#11C6DB] md:from-[-10%] md:to-[#e7e2d6] md:to-70% rounded-none md:rounded-[3rem] pt-16 pb-0 px-6 md:p-14 mb-8 md:mb-12 shadow-none md:shadow-2xl md:shadow-[#11C6DB]/20 flex flex-col justify-end items-center md:items-start relative overflow-visible md:overflow-hidden group">
+            <div class="stat-card md:bg-gradient-to-tr md:from-[#11C6DB] md:from-[-10%] md:to-[#e7e2d6] md:to-70% rounded-none md:rounded-[3rem] pt-16 pb-0 px-0 md:p-14 mb-8 md:mb-12 shadow-none md:shadow-2xl md:shadow-[#11C6DB]/20 flex flex-col justify-end items-center md:items-start relative overflow-visible md:overflow-hidden group">
                 
                 <!-- Operational Waves (from Stats Section) -->
                 <svg class="absolute inset-0 w-full h-full text-white/20 pointer-events-none z-0" preserveAspectRatio="none" viewBox="0 0 100 100">
@@ -18,7 +18,7 @@
                 <!-- Inner Layout -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 relative z-10 w-full">
                     <!-- Left Side: Conversion & Branding -->
-                    <div class="flex flex-col items-center md:items-start justify-center text-center md:text-left">
+                    <div class="flex flex-col items-center md:items-start justify-center text-center md:text-left px-6 md:px-0">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-block group hover-lift mb-6 md:mb-3">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-14 md:h-10 w-auto object-contain transition-all duration-300" />
                         </a>
@@ -55,7 +55,7 @@
                     </div>
 
                     <!-- Right Side: Google Map Box Component -->
-                    <div class="h-[350px] md:h-[420px] -mx-6 w-[calc(100%+3rem)] max-w-none md:mx-0 md:w-full md:max-w-full md:static md:translate-x-0 rounded-none md:rounded-[2rem] overflow-hidden p-0 md:p-1.5 group md:bg-white/20 border-y md:border md:border-white/30 md:shadow-inner md:backdrop-blur-sm mt-8 md:mt-0">
+                    <div class="h-[350px] md:h-[420px] w-full md:static md:translate-x-0 rounded-none md:rounded-[2rem] overflow-hidden p-0 md:p-1.5 group md:bg-white/20 border-y md:border md:border-white/30 md:shadow-inner md:backdrop-blur-sm mt-8 md:mt-0">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8286940828277!2d28.940540076595568!3d41.07282671545624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab65d6a2f8c5f%3A0xc6cf6d4db7a9d20c!2sMimar%20Sinan%2C%20Cendere%20Yolu%20Cd.%20No%3A49%2C%2034075%20Ey%C3%BCpsultan%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1709641151614!5m2!1sen!2str" 
                             width="100%" 
