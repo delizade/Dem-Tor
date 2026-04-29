@@ -43,10 +43,10 @@ function demtor_scripts() {
 add_action( 'wp_enqueue_scripts', 'demtor_scripts' );
 
 /**
- * Inject Tailwind v4 CDN via hook since it's a script tag that processes CSS.
+ * Inject Tailwind v3 CDN for maximum mobile compatibility.
  */
 function demtor_inject_tailwind() {
-    echo '<script src="https://unpkg.com/@tailwindcss/browser@4"></script>' . "\n";
+    echo '<script src="https://cdn.tailwindcss.com"></script>' . "\n";
 }
 add_action( 'wp_head', 'demtor_inject_tailwind', 5 );
 
