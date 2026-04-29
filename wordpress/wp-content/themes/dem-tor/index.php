@@ -268,13 +268,13 @@ get_header(); ?>
             <div class="swiper-slide !w-[450px] md:!w-[700px] !h-[320px] md:!h-[480px] flex-shrink-0">
                 <div class="w-full h-full grid grid-cols-2 grid-rows-2 gap-3">
                     <a href="<?php echo get_template_directory_uri(); ?>/assets/album/01.jpg" class="glightbox row-span-2 col-span-1 block w-full h-full rounded-[2rem] overflow-hidden group relative">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/01.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/01.jpg" loading="eager" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 1" />
                     </a>
                     <a href="<?php echo get_template_directory_uri(); ?>/assets/album/02.jpg" class="glightbox row-span-1 col-span-1 block w-full h-full rounded-[2rem] overflow-hidden group relative">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/02.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 2" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/02.jpg" loading="eager" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 2" />
                     </a>
                     <a href="<?php echo get_template_directory_uri(); ?>/assets/album/03.jpg" class="glightbox row-span-1 col-span-1 block w-full h-full rounded-[2rem] overflow-hidden group relative">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/03.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 3" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/03.jpg" loading="eager" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 3" />
                     </a>
                 </div>
             </div>
@@ -283,13 +283,13 @@ get_header(); ?>
             <div class="swiper-slide !w-[450px] md:!w-[700px] !h-[320px] md:!h-[480px] flex-shrink-0">
                 <div class="w-full h-full grid grid-cols-2 grid-rows-2 gap-3">
                     <a href="<?php echo get_template_directory_uri(); ?>/assets/album/04.jpg" class="glightbox row-span-1 col-span-2 block w-full h-full rounded-[2rem] overflow-hidden group relative">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/04.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 4" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/04.jpg" loading="eager" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 4" />
                     </a>
                     <a href="<?php echo get_template_directory_uri(); ?>/assets/album/05.jpg" class="glightbox row-span-1 col-span-1 block w-full h-full rounded-[2rem] overflow-hidden group relative">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/05.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 5" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/05.jpg" loading="eager" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 5" />
                     </a>
                     <a href="<?php echo get_template_directory_uri(); ?>/assets/album/06.jpg" class="glightbox row-span-1 col-span-1 block w-full h-full rounded-[2rem] overflow-hidden group relative">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/06.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 6" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/06.jpg" loading="eager" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 6" />
                     </a>
                 </div>
             </div>
@@ -298,7 +298,7 @@ get_header(); ?>
             <div class="swiper-slide !w-[320px] md:!w-[480px] !h-[320px] md:!h-[480px] flex-shrink-0">
                 <div class="w-full h-full">
                     <a href="<?php echo get_template_directory_uri(); ?>/assets/album/07.jpg" class="glightbox block w-full h-full rounded-[2rem] overflow-hidden group relative">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/07.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 7" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/album/07.jpg" loading="eager" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="Gallery Image 7" />
                     </a>
                 </div>
             </div>
