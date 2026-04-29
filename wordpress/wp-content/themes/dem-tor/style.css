@@ -11,7 +11,7 @@ Text Domain: demtor
 
 :root {
   --color-deep-navy: #002366;
-  --color-conversion-gold: #D4AF37;
+  --color-conversion-gold: #11C6DB;
   --color-paper: #E8E4DD;
   --color-signal-red: #E63B2E;
   --color-off-white: #F5F3EE;
@@ -21,14 +21,16 @@ Text Domain: demtor
 body {
   background-color: var(--color-paper);
   color: var(--color-black);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   /* Smooth scrolling for anchor links */
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, .font-display {
-  font-family: 'DM Serif Display', serif;
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: -0.025em;
+  line-height: 1.15 !important;
 }
 
 .font-mono {
@@ -36,7 +38,7 @@ h1, h2, h3, .font-display {
 }
 
 .font-sans {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Global Noise Overlay Filter (0.05 opacity) */
@@ -116,12 +118,18 @@ a:hover, .hover-lift:hover {
   transform: scale(1.05);
 }
 
-/* Active Segmented Tab */
+/* Active Segmented Tab (Minimalist Typographic) */
 .tab-active {
-  background-color: var(--color-conversion-gold) !important;
-  color: var(--color-black) !important;
-  transform: scale(1.05);
-  border-color: transparent !important;
+  background-color: transparent !important;
+  border-top-color: var(--color-conversion-gold) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+.tab-active .tab-number {
+  color: var(--color-conversion-gold) !important;
+}
+.tab-active .tab-title {
+  color: #ffffff !important;
 }
 
 /* Utilities */
