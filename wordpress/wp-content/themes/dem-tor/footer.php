@@ -7,7 +7,7 @@
         
         <div class="max-w-7xl mx-auto px-0 md:px-6 relative z-10">
             <!-- Modern Light-Gradient Box on Beige Background (No Stroke) -->
-            <div class="stat-card md:bg-gradient-to-tr md:from-[#11C6DB] md:from-[-10%] md:to-[#e7e2d6] md:to-70% rounded-none md:rounded-[3rem] pt-16 pb-0 px-6 md:p-14 mb-8 md:mb-12 shadow-none md:shadow-2xl md:shadow-[#11C6DB]/20 flex flex-col justify-end items-center md:items-start relative overflow-hidden group">
+            <div class="stat-card md:bg-gradient-to-tr md:from-[#11C6DB] md:from-[-10%] md:to-[#e7e2d6] md:to-70% rounded-none md:rounded-[3rem] pt-16 pb-0 px-6 md:p-14 mb-8 md:mb-12 shadow-none md:shadow-2xl md:shadow-[#11C6DB]/20 flex flex-col justify-end items-center md:items-start relative overflow-visible md:overflow-hidden group">
                 
                 <!-- Operational Waves (from Stats Section) -->
                 <svg class="absolute inset-0 w-full h-full text-white/20 pointer-events-none z-0" preserveAspectRatio="none" viewBox="0 0 100 100">
