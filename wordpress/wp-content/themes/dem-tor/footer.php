@@ -297,6 +297,45 @@
                 }
             });
 
+            // --- Mobile Menu Logic (GSAP) ---
+            const mobileOverlay = document.getElementById('mobile-menu-overlay');
+            const mobileBtnOpen = document.getElementById('mobile-menu-btn');
+            const mobileBtnClose = document.getElementById('mobile-menu-close');
+            const mobileLinksMenu = document.querySelectorAll('.mobile-nav-link');
+            const menuFooter = document.getElementById('mobile-menu-footer');
+
+            if(mobileBtnOpen && mobileOverlay && mobileBtnClose) {
+                // Initial sets for animation
+                gsap.set(mobileLinksMenu, { y: 30, opacity: 0 });
+                gsap.set(menuFooter, { y: 20, opacity: 0 });
+
+                const tlMenu = gsap.timeline({ 
+                    paused: true, 
+                    onReverseComplete: () => mobileOverlay.classList.add('hidden') 
+                });
+                
+                tlMenu.to(mobileOverlay, { y: "0%", duration: 0.7, ease: "power4.inOut" })
+                      .to(mobileLinksMenu, { y: 0, opacity: 1, stagger: 0.1, duration: 0.5, ease: "power3.out" }, "-=0.3")
+                      .to(menuFooter, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, "-=0.4");
+
+                mobileBtnOpen.addEventListener('click', () => {
+                    mobileOverlay.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                    tlMenu.play();
+                });
+
+                const closeMenu = () => {
+                    document.body.style.overflow = '';
+                    tlMenu.reverse();
+                };
+
+                mobileBtnClose.addEventListener('click', closeMenu);
+
+                mobileLinksMenu.forEach(link => {
+                    link.addEventListener('click', closeMenu);
+                });
+            }
+
             return () => ctx.revert(); // Cleanup GSAP on unmount/reload
         });
     </script>
