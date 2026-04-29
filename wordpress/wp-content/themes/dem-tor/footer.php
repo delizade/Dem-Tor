@@ -3,11 +3,11 @@
  * The template for displaying the footer
  */
 ?>
-    <footer id="iletisim" class="bg-[#DFDAD0] text-[#111111] pt-0 pb-12 relative overflow-hidden">
+    <footer id="iletisim" class="bg-gradient-to-tr from-[#11C6DB] from-[-10%] to-[#e7e2d6] to-70% md:bg-none md:bg-[#DFDAD0] text-[#111111] pt-0 pb-8 md:pb-12 relative overflow-hidden">
         
-        <div class="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
+        <div class="max-w-7xl mx-auto px-0 md:px-6 relative z-10">
             <!-- Modern Light-Gradient Box on Beige Background (No Stroke) -->
-            <div class="stat-card bg-gradient-to-tr from-[#11C6DB] from-[-10%] to-[#e7e2d6] to-70% rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-14 mb-12 shadow-2xl shadow-[#11C6DB]/20 flex flex-col justify-end items-start relative overflow-hidden group">
+            <div class="stat-card md:bg-gradient-to-tr md:from-[#11C6DB] md:from-[-10%] md:to-[#e7e2d6] md:to-70% rounded-none md:rounded-[3rem] pt-16 pb-0 px-6 md:p-14 mb-8 md:mb-12 shadow-none md:shadow-2xl md:shadow-[#11C6DB]/20 flex flex-col justify-end items-center md:items-start relative overflow-hidden group">
                 
                 <!-- Operational Waves (from Stats Section) -->
                 <svg class="absolute inset-0 w-full h-full text-white/20 pointer-events-none z-0" preserveAspectRatio="none" viewBox="0 0 100 100">
@@ -18,35 +18,35 @@
                 <!-- Inner Layout -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 relative z-10 w-full">
                     <!-- Left Side: Conversion & Branding -->
-                    <div class="flex flex-col items-start justify-center">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-block group hover-lift mb-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-8 md:h-10 w-auto object-contain transition-all duration-300" />
+                    <div class="flex flex-col items-center md:items-start justify-center text-center md:text-left">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-block group hover-lift mb-6 md:mb-3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-14 md:h-10 w-auto object-contain transition-all duration-300" />
                         </a>
-                        <h3 class="font-sans text-lg md:text-xl font-bold tracking-wide text-[#004562] mb-2">Dem-Tor Gıda Meşrubat Dağıtım Ltd.Şti.</h3>
-                        <p class="font-mono text-[#004562]/60 text-xs md:text-sm uppercase tracking-widest mb-10">1992'den Beri Güvenle.</p>
+                        <h3 class="font-sans text-xl md:text-xl font-bold tracking-wide text-[#004562] mb-2">Dem-Tor Gıda Meşrubat Dağıtım Ltd.Şti.</h3>
+                        <p class="font-mono text-[#004562]/60 text-xs md:text-sm uppercase tracking-widest mb-4 md:mb-10">1992'den Beri Güvenle.</p>
                         
                         <!-- Sophisticated Contact Design (Clean Version) -->
-                        <div class="relative mt-8 pl-10 md:pl-12 space-y-6 max-w-[320px]">
+                        <div class="relative mt-4 md:mt-8 pl-0 md:pl-12 space-y-8 md:space-y-6 max-w-[320px] mx-auto md:mx-0 w-full text-center md:text-left">
                             
                             <!-- Address Item -->
-                            <div class="relative flex items-start group">
-                                <div class="absolute -left-[54px] md:-left-[64px] top-0.5 flex items-center justify-center w-10 h-10 bg-[#e7e2d6]/50 rounded-xl shadow-sm border border-[#111111]/5 text-[#004562]">
+                            <div class="relative flex flex-col md:flex-row items-center md:items-start group">
+                                <div class="md:absolute md:-left-[64px] md:top-0.5 flex items-center justify-center w-10 h-10 bg-[#e7e2d6]/50 rounded-xl shadow-sm border border-[#111111]/5 text-[#004562] mb-3 md:mb-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#004562" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                                 </div>
-                                <span class="text-[#004562] font-sans text-lg font-bold leading-relaxed">Mimar Sinan Mah. Cendere Yolu. No: 49 Eyüpsultan / İstanbul</span>
+                                <span class="text-[#004562] font-sans text-lg font-bold leading-relaxed text-center md:text-left">Mimar Sinan Mah. Cendere Yolu. No: 49 Eyüpsultan / İstanbul</span>
                             </div>
                             
                             <!-- Phone Item -->
-                            <div class="relative flex items-center group">
-                                <div class="absolute -left-[54px] md:-left-[64px] top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 bg-[#e7e2d6]/50 rounded-xl shadow-sm border border-[#111111]/5 text-[#004562]">
+                            <div class="relative flex flex-col md:flex-row items-center group">
+                                <div class="md:absolute md:-left-[64px] md:top-1/2 md:-translate-y-1/2 flex items-center justify-center w-10 h-10 bg-[#e7e2d6]/50 rounded-xl shadow-sm border border-[#111111]/5 text-[#004562] mb-3 md:mb-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#004562" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                                 </div>
                                 <a href="tel:+902122897317" class="text-[#004562] font-sans text-lg font-bold hover:opacity-70 transition-opacity tracking-tight">+90 212 289 73 17</a>
                             </div>
 
                             <!-- Email Item -->
-                            <div class="relative flex items-center group">
-                                <div class="absolute -left-[54px] md:-left-[64px] top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 bg-[#e7e2d6]/50 rounded-xl shadow-sm border border-[#111111]/5 text-[#004562]">
+                            <div class="relative flex flex-col md:flex-row items-center group">
+                                <div class="md:absolute md:-left-[64px] md:top-1/2 md:-translate-y-1/2 flex items-center justify-center w-10 h-10 bg-[#e7e2d6]/50 rounded-xl shadow-sm border border-[#111111]/5 text-[#004562] mb-3 md:mb-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#004562" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                                 </div>
                                 <a href="mailto:info@dem-tor.com.tr" class="text-[#004562] font-sans text-lg font-bold hover:opacity-70 transition-opacity">info@dem-tor.com.tr</a>
@@ -55,23 +55,23 @@
                     </div>
 
                     <!-- Right Side: Google Map Box Component -->
-                    <div class="h-[350px] md:h-[420px] rounded-3xl md:rounded-[2rem] overflow-hidden p-1.5 relative group bg-white/20 border border-white/30 shadow-inner backdrop-blur-sm">
+                    <div class="h-[350px] md:h-[420px] -mx-6 w-[calc(100%+3rem)] md:mx-0 md:w-full rounded-none md:rounded-[2rem] overflow-hidden p-0 md:p-1.5 relative group md:bg-white/20 border-y md:border md:border-white/30 md:shadow-inner md:backdrop-blur-sm mt-8 md:mt-0">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8286940828277!2d28.940540076595568!3d41.07282671545624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab65d6a2f8c5f%3A0xc6cf6d4db7a9d20c!2sMimar%20Sinan%2C%20Cendere%20Yolu%20Cd.%20No%3A49%2C%2034075%20Ey%C3%BCpsultan%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1709641151614!5m2!1sen!2str" 
                             width="100%" 
                             height="100%" 
-                            style="border:0; border-radius: 1.75rem; filter: grayscale(100%) contrast(1.1) brightness(0.9);" 
+                            style="border:0; filter: grayscale(100%) contrast(1.1) brightness(0.9);" 
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade"
-                            class="relative z-0 w-full h-full object-cover transition-all duration-700 group-hover:filter-none">
+                            class="relative z-0 w-full h-full object-cover transition-all duration-700 group-hover:filter-none md:rounded-[1.75rem]">
                         </iframe>
                     </div>
                 </div>
             </div>
 
             <!-- Bottom Bar: Minimalist & Very Faint Gray on Beige -->
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4 px-4 font-mono text-[10px] md:text-xs text-[#111111]/20 uppercase tracking-[0.2em]">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 px-6 font-mono text-[10px] md:text-xs text-[#111111]/40 md:text-[#111111]/20 uppercase tracking-[0.2em] text-center md:text-left">
                 <p>&copy; <?php echo date('Y'); ?> Dem-Tor Logistics. All Rights Reserved.</p>
                 <p>Designed with Precision.</p>
             </div>
