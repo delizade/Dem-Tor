@@ -25,7 +25,7 @@
         /* Progressive Enhancement: iOS Smooth Corners (Superellipse) */
         @supports (corner-shape: squircle) or (-webkit-corner-shape: squircle) {
             /* Enable squircle globally for everything that uses rounded corners */
-            [class*="rounded-"], 
+            [class*="rounded-"]:not(.rounded-none), 
             .sleek-box,
             .stat-card,
             iframe {
@@ -53,7 +53,7 @@
     <div class="flex items-center justify-between px-6 py-5">
         <!-- Logo Area -->
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="flex items-center group hover-lift z-10 relative">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-10 w-auto object-contain brightness-0 invert transition-all duration-500" id="nav-logo" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-8 md:h-10 w-auto object-contain brightness-0 invert transition-all duration-500" id="nav-logo" />
         </a>
 
         <!-- Desktop Navigation -->

@@ -16,19 +16,23 @@ get_header(); ?>
     </div>
 
     <!-- Content: Centered -->
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-6">
-        <div class="max-w-4xl gsap-fade-up">
-            <h1 class="font-extrabold text-5xl md:text-[6em] text-[#F5F3EE] leading-[1.05] mb-8 tracking-wide" style="font-family: 'Roboto Slab', serif;">
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 flex flex-col items-center md:items-start text-center md:text-left h-full justify-center">
+        <div class="max-w-4xl gsap-fade-up flex flex-col items-center md:items-start w-full">
+            <h1 class="font-extrabold text-5xl md:text-[6em] text-[#F5F3EE] leading-[1.05] mb-4 md:mb-8 tracking-wide" style="font-family: 'Roboto Slab', serif;">
                 Lojistik ve <br/>
                 dağıtım <br/>
                 <span class="text-[#11C6DB]">çözümleri.</span>
             </h1>
-            <p class="font-medium text-lg md:text-xl text-[#E8E4DD]/80 tracking-normal mb-10 max-w-full whitespace-nowrap" style="font-family: 'Roboto Slab', serif;">
+            <p class="font-medium text-[1.1rem] md:text-xl text-[#E8E4DD]/80 tracking-normal mb-0 md:mb-10 max-w-[280px] md:max-w-full mx-auto md:mx-0 whitespace-normal md:whitespace-nowrap" style="font-family: 'Roboto Slab', serif;">
                 Otuz yılı aşkın güvenilir dağıtım tecrübesi.
             </p>
-            <a href="#iletisim" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-black font-semibold text-lg btn-magnetic transition-colors hover:bg-[#11C6DB]">
+        </div>
+        
+        <!-- Button (Absolute on mobile, static on desktop) -->
+        <div class="absolute bottom-10 left-0 w-full px-6 md:static md:w-auto md:px-0 md:mt-0 gsap-fade-up">
+            <a href="#iletisim" class="w-full md:w-auto flex md:inline-flex justify-center items-center gap-3 px-6 py-3.5 md:px-8 md:py-4 rounded-full bg-white text-black font-semibold text-[15px] md:text-lg btn-magnetic transition-colors hover:bg-[#11C6DB]">
                 <span class="relative z-10">Bize Ulaşın</span>
-                <?php echo get_lucide_icon('arrow-right', 'w-5 h-5 relative z-10'); ?>
+                <?php echo get_lucide_icon('arrow-right', 'w-4 h-4 md:w-5 md:h-5 relative z-10'); ?>
             </a>
         </div>
     </div>
@@ -37,9 +41,10 @@ get_header(); ?>
 <!-- 2. THE HERITAGE -->
 <section id="kurumsal" class="py-24 md:py-32 bg-[#E8E4DD] text-[#111111] relative z-10">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <div class="gsap-fade-up order-2 lg:order-1">
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl text-[#002366] mb-8">
+                <!-- Desktop Title (Hidden on Mobile) -->
+                <h2 class="hidden md:block font-display text-4xl md:text-5xl lg:text-6xl text-[#002366] mb-8">
                     30 Yıllık Güven, <br/>
                     Profesyonel Dağıtım
                 </h2>
@@ -49,10 +54,23 @@ get_header(); ?>
                 </div>
             </div>
             <!-- Heritage Image -->
-            <div class="gsap-fade-up order-1 lg:order-2 h-[500px] rounded-[2rem] overflow-hidden border border-[#002366]/10 shadow-2xl relative group">
-                <div class="absolute inset-0 bg-[#11C6DB]/10 mix-blend-overlay z-10"></div>
-                <!-- Will generate heritage_office.jpg -->
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/heritage_office.jpg" alt="Dem-Tor Office" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="gsap-fade-up order-1 lg:order-2 h-[85vw] md:h-[500px] w-[calc(100%+3rem)] md:w-auto -mx-6 -mt-24 md:mx-0 md:mt-0 rounded-none md:rounded-[2rem] overflow-hidden border-0 md:border md:border-[#002366]/10 shadow-none md:shadow-2xl relative group flex flex-col justify-end">
+                <!-- Light Overlay -->
+                <div class="absolute inset-0 bg-[#11C6DB]/10 mix-blend-overlay z-10 pointer-events-none"></div>
+                
+                <!-- Mobile Dark Gradient for Text Legibility -->
+                <div class="absolute inset-0 bg-gradient-to-t from-[#111111]/90 via-[#111111]/20 to-transparent z-10 md:hidden pointer-events-none"></div>
+                
+                <!-- Image -->
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/heritage_office.jpg" alt="Dem-Tor Office" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 z-0" />
+                
+                <!-- Mobile Title Overlay -->
+                <div class="relative z-20 px-6 pb-12 md:hidden">
+                    <h2 class="font-display text-[2.5rem] leading-[1.1] text-white mb-0 drop-shadow-md">
+                        30 Yıllık Güven, <br/>
+                        Profesyonel Dağıtım
+                    </h2>
+                </div>
             </div>
         </div>
     </div>
@@ -291,32 +309,38 @@ get_header(); ?>
 
             <!-- Tab 02: Yönetim Kurulu -->
             <div id="tab-yonetim" class="tab-content w-full absolute top-0 left-0 opacity-0 invisible z-10">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                     <!-- Member 1 -->
-                    <div class="sleek-box aspect-[3/4] relative group">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="Ahmet Torun" class="w-full h-full object-cover filter grayscale contrast-125" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 w-full p-6 text-left">
-                            <h4 class="font-display text-2xl text-white mb-1 group-hover:text-white transition-colors">Ahmet Torun</h4>
-                            <p class="font-mono text-xs uppercase tracking-widest text-[#11C6DB] opacity-80 group-hover:opacity-100 transition-opacity">Şirket Müdürü / Kurucu Ortak</p>
+                    <div class="sleek-box flex md:block flex-row md:aspect-[3/4] relative group overflow-hidden" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.05);">
+                        <div class="w-32 sm:w-40 md:w-full shrink-0 md:h-full relative">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="Ahmet Torun" class="w-full h-full object-cover filter grayscale contrast-125" />
+                            <div class="hidden md:block absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        </div>
+                        <div class="flex-1 md:absolute md:bottom-0 md:left-0 md:w-full p-5 md:p-6 text-left flex flex-col justify-center border-l border-white/5 md:border-l-0">
+                            <h4 class="font-display text-[22px] md:text-2xl text-white mb-1 group-hover:text-[#11C6DB] transition-colors">Ahmet Torun</h4>
+                            <p class="font-mono text-[10px] md:text-xs uppercase tracking-widest text-[#11C6DB] opacity-80 group-hover:opacity-100 transition-opacity">Şirket Müdürü / Kurucu Ortak</p>
                         </div>
                     </div>
                     <!-- Member 2 -->
-                    <div class="sleek-box aspect-[3/4] relative group">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="Metin Torun" class="w-full h-full object-cover filter grayscale contrast-125" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 w-full p-6 text-left">
-                            <h4 class="font-display text-2xl text-white mb-1">Metin Torun</h4>
-                            <p class="font-mono text-xs uppercase tracking-widest text-white/60 group-hover:text-[#11C6DB] transition-colors">Şirket Müdürü / Kurucu Ortak</p>
+                    <div class="sleek-box flex md:block flex-row md:aspect-[3/4] relative group overflow-hidden" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.05);">
+                        <div class="w-32 sm:w-40 md:w-full shrink-0 md:h-full relative">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="Metin Torun" class="w-full h-full object-cover filter grayscale contrast-125" />
+                            <div class="hidden md:block absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        </div>
+                        <div class="flex-1 md:absolute md:bottom-0 md:left-0 md:w-full p-5 md:p-6 text-left flex flex-col justify-center border-l border-white/5 md:border-l-0">
+                            <h4 class="font-display text-[22px] md:text-2xl text-white mb-1">Metin Torun</h4>
+                            <p class="font-mono text-[10px] md:text-xs uppercase tracking-widest text-white/60 group-hover:text-[#11C6DB] transition-colors">Şirket Müdürü / Kurucu Ortak</p>
                         </div>
                     </div>
                     <!-- Member 3 -->
-                    <div class="sleek-box aspect-[3/4] relative group">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Sedat Demirhan" class="w-full h-full object-cover filter grayscale contrast-125" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 w-full p-6 text-left">
-                            <h4 class="font-display text-2xl text-white mb-1">Sedat Demirhan</h4>
-                            <p class="font-mono text-xs uppercase tracking-widest text-white/60 group-hover:text-[#11C6DB] transition-colors">Kurucu Ortak</p>
+                    <div class="sleek-box flex md:block flex-row md:aspect-[3/4] relative group overflow-hidden" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.05);">
+                        <div class="w-32 sm:w-40 md:w-full shrink-0 md:h-full relative">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Sedat Demirhan" class="w-full h-full object-cover filter grayscale contrast-125" />
+                            <div class="hidden md:block absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        </div>
+                        <div class="flex-1 md:absolute md:bottom-0 md:left-0 md:w-full p-5 md:p-6 text-left flex flex-col justify-center border-l border-white/5 md:border-l-0">
+                            <h4 class="font-display text-[22px] md:text-2xl text-white mb-1">Sedat Demirhan</h4>
+                            <p class="font-mono text-[10px] md:text-xs uppercase tracking-widest text-white/60 group-hover:text-[#11C6DB] transition-colors">Kurucu Ortak</p>
                         </div>
                     </div>
                 </div>
@@ -365,23 +389,34 @@ get_header(); ?>
                 <p class="font-sans text-lg text-[#111111]/60">Her türlü soru, görüş ve iş ortaklığı talebiniz için formu doldurabilirsiniz.</p>
             </div>
             
-            <form class="space-y-6">
+            <form class="space-y-6" id="contact-form">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                        <label class="block font-mono text-xs uppercase tracking-widest text-[#111111]/60 mb-2">İsim Soyisim</label>
-                        <input type="text" class="w-full bg-transparent border-b border-[#111111]/20 pb-2 focus:outline-none focus:border-[#11C6DB] transition-colors font-sans text-lg text-[#111111] placeholder-[#111111]/30" placeholder="Adınız" />
+                        <label class="block font-mono text-xs uppercase tracking-widest text-[#111111]/60 mb-2">İsim Soyisim *</label>
+                        <input type="text" id="isim" name="isim" required class="w-full bg-transparent border-b border-[#111111]/20 pb-2 focus:outline-none focus:border-[#11C6DB] transition-colors font-sans text-lg text-[#111111] placeholder-[#111111]/30" placeholder="Adınız Soyadınız" />
+                    </div>
+                    <div>
+                        <label class="block font-mono text-xs uppercase tracking-widest text-[#111111]/60 mb-2">E-Posta *</label>
+                        <input type="email" id="email" name="email" required class="w-full bg-transparent border-b border-[#111111]/20 pb-2 focus:outline-none focus:border-[#11C6DB] transition-colors font-sans text-lg text-[#111111] placeholder-[#111111]/30" placeholder="ornek@firma.com" />
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block font-mono text-xs uppercase tracking-widest text-[#111111]/60 mb-2">Telefon</label>
+                        <input type="tel" id="telefon" name="telefon" pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{2}[-\s\.]?[0-9]{2}" class="w-full bg-transparent border-b border-[#111111]/20 pb-2 focus:outline-none focus:border-[#11C6DB] transition-colors font-sans text-lg text-[#111111] placeholder-[#111111]/30" title="Örnek: +90 (5XX) XXX XX XX veya 05XX XXX XX XX" placeholder="+90 (5XX) XXX XX XX" />
                     </div>
                     <div>
                         <label class="block font-mono text-xs uppercase tracking-widest text-[#111111]/60 mb-2">Firma Adı</label>
-                        <input type="text" class="w-full bg-transparent border-b border-[#111111]/20 pb-2 focus:outline-none focus:border-[#11C6DB] transition-colors font-sans text-lg text-[#111111] placeholder-[#111111]/30" placeholder="Firma Ünvanı" />
+                        <input type="text" id="firma" name="firma" class="w-full bg-transparent border-b border-[#111111]/20 pb-2 focus:outline-none focus:border-[#11C6DB] transition-colors font-sans text-lg text-[#111111] placeholder-[#111111]/30" placeholder="Firma Ünvanı" />
                     </div>
                 </div>
                 <div>
-                    <label class="block font-mono text-xs uppercase tracking-widest text-[#111111]/60 mb-2">Mesajınız</label>
-                    <textarea rows="4" class="w-full bg-transparent border-b border-[#111111]/20 pb-2 focus:outline-none focus:border-[#11C6DB] transition-colors font-sans text-lg text-[#111111] placeholder-[#111111]/30 resize-none" placeholder="Size nasıl yardımcı olabiliriz?"></textarea>
+                    <label class="block font-mono text-xs uppercase tracking-widest text-[#111111]/60 mb-2">Mesajınız *</label>
+                    <textarea id="mesaj" name="mesaj" required rows="4" class="w-full bg-transparent border-b border-[#111111]/20 pb-2 focus:outline-none focus:border-[#11C6DB] transition-colors font-sans text-lg text-[#111111] placeholder-[#111111]/30 resize-none" placeholder="Size nasıl yardımcı olabiliriz?"></textarea>
                 </div>
-                <div class="text-center pt-8">
-                    <button type="button" class="inline-flex items-center justify-center px-10 py-4 rounded-full bg-[#002366] text-white font-semibold text-lg btn-magnetic transition-colors hover:bg-[#11C6DB] hover:text-black w-full md:w-auto">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6 pt-6">
+                    <p class="text-[13px] text-[#111111]/50 font-sans italic">* İşaretli alanların doldurulması zorunludur.</p>
+                    <button type="submit" class="inline-flex items-center justify-center px-10 py-4 rounded-full bg-[#002366] text-white font-semibold text-lg btn-magnetic transition-colors hover:bg-[#11C6DB] hover:text-black w-full md:w-auto">
                         <span class="relative z-10">Gönder</span>
                     </button>
                 </div>
