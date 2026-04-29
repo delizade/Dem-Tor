@@ -77,8 +77,110 @@ get_header(); ?>
     </div>
 </section>
 
-<!-- 3. OPERATIONAL STATS -->
-<section class="py-24 md:py-32 bg-[#D8D3C8] relative z-10 overflow-hidden">
+<!-- 3. OPERASYON AĞI (Asymmetric Dashboard) -->
+<section id="operasyon" class="py-24 md:py-32 bg-[#08131F] text-[#E8E4DD] relative z-10 overflow-hidden">
+    
+    <!-- Abstract Logistics SVG Background (Reused from Şirket Bilgileri) -->
+    <div class="absolute inset-0 z-0 pointer-events-none opacity-20 flex items-center justify-center">
+        <svg width="100%" height="100%" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" class="w-full h-full object-cover">
+            <g stroke="#11C6DB" stroke-width="0.5" fill="none">
+                <!-- Global Logistics Network Lines -->
+                <path d="M-200,400 C200,200 400,600 700,400 S1100,200 1600,400" />
+                <path d="M-200,600 C100,800 500,200 900,500 S1200,700 1600,600" />
+                <path d="M100,100 C300,300 200,700 500,600 S800,100 1100,300" />
+                
+                <!-- Hubs / Nodes -->
+                <circle cx="240" cy="350" r="3.5" fill="#11C6DB" />
+                <circle cx="700" cy="400" r="5" fill="none" stroke-width="1.5"/>
+                <circle cx="700" cy="400" r="2" fill="#11C6DB" />
+                <circle cx="900" cy="500" r="3.5" fill="#11C6DB" />
+                <circle cx="460" cy="610" r="2.5" fill="#11C6DB" />
+                <circle cx="1040" cy="310" r="3" fill="#11C6DB" />
+                
+                <!-- Connecting dotted routes between hubs -->
+                <line x1="240" y1="350" x2="700" y2="400" stroke-dasharray="3 6" />
+                <line x1="700" y1="400" x2="900" y2="500" stroke-dasharray="3 6" />
+                <line x1="240" y1="350" x2="460" y2="610" stroke-dasharray="3 6" />
+                <line x1="700" y1="400" x2="1040" y2="310" stroke-dasharray="3 6" />
+                
+                <!-- Circular radar/sonar rings at the main hub -->
+                <circle cx="700" cy="400" r="40" stroke-dasharray="1 10" opacity="0.5"/>
+                <circle cx="700" cy="400" r="80" stroke-dasharray="2 15" opacity="0.3"/>
+                <circle cx="700" cy="400" r="140" stroke-dasharray="4 20" opacity="0.1"/>
+            </g>
+        </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start h-auto">
+            
+            <!-- Left Panel: Visual Focus (66%) -->
+            <div class="lg:col-span-8 h-[500px] lg:h-[700px] rounded-[2rem] overflow-hidden relative group gsap-fade-up shadow-2xl transform-gpu" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/gallery_warehouse.jpg" alt="Dem-Tor Operasyon" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 transform-gpu" />
+                
+                <!-- Dark Overlay for Text Readability -->
+                <div class="absolute inset-0 bg-black/10 mix-blend-multiply pointer-events-none transition-opacity duration-700 group-hover:bg-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-[#08131F]/90 via-[#08131F]/40 to-transparent pointer-events-none"></div>
+                
+                <!-- Embedded Header Section -->
+                <div class="absolute top-0 left-0 w-full p-8 md:p-12 z-10 pointer-events-none">
+                    <h2 class="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-4 drop-shadow-lg">Sevkiyatın Akıllı Yüzü</h2>
+                    <p class="font-sans text-lg md:text-xl text-white/90 font-light leading-relaxed max-w-2xl drop-shadow-md">
+                        Dem-Tor olarak lojistiği sadece bir taşıma süreci değil, bir ağ yönetimi olarak görüyoruz, ticaretin kesintisiz akışını sağlıyoruz.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Panel: Data Focus (34%) -->
+            <div class="lg:col-span-4 flex flex-col gap-10 lg:gap-12 mt-2 md:mt-0">
+                
+                <!-- Item 01 -->
+                <div class="op-card gsap-fade-up flex flex-col items-start gap-3 group">
+                    <div class="flex items-start justify-between w-full border-b border-white/5 pb-4">
+                        <div>
+                            <span class="font-mono text-[10px] md:text-xs text-[#11C6DB] uppercase tracking-widest block mb-2 opacity-80">Dijital Rota Yönetimi</span>
+                            <h4 class="font-display text-xl md:text-2xl text-white leading-tight">Planlama Disiplini</h4>
+                        </div>
+                    </div>
+                    <p class="font-sans text-[#E8E4DD]/70 leading-relaxed text-[15px] md:text-base pt-1">
+                        Hata payını minimize eden sistem altyapımız sayesinde, her sabah en verimli dağıtım rotasını saniyeler içinde kurguluyoruz. Ticaretin hızını, veriye dayalı planlama disiplinimizle belirliyoruz.
+                    </p>
+                </div>
+
+                <!-- Item 02 -->
+                <div class="op-card gsap-fade-up flex flex-col items-start gap-3 group">
+                    <div class="flex items-start justify-between w-full border-b border-white/5 pb-4">
+                        <div>
+                            <span class="font-mono text-[10px] md:text-xs text-[#11C6DB] uppercase tracking-widest block mb-2 opacity-80">Geniş Erişim Ağı</span>
+                            <h4 class="font-display text-xl md:text-2xl text-white leading-tight">Fiziksel Kapasite</h4>
+                        </div>
+                    </div>
+                    <p class="font-sans text-[#E8E4DD]/70 leading-relaxed text-[15px] md:text-base pt-1">
+                        Bölge genelindeki aktif noktalarımıza, hijyen ve soğuk zincir standartlarına uygun modern filomuzla kesintisiz ulaşıyoruz. Her sevkiyat, operasyonel gücümüzün bir parçasıdır.
+                    </p>
+                </div>
+
+                <!-- Item 03 -->
+                <div class="op-card gsap-fade-up flex flex-col items-start gap-3 group">
+                    <div class="flex items-start justify-between w-full border-b border-white/5 pb-4">
+                        <div>
+                            <span class="font-mono text-[10px] md:text-xs text-[#11C6DB] uppercase tracking-widest block mb-2 opacity-80">Lojistik Üssü: Eyüp</span>
+                            <h4 class="font-display text-xl md:text-2xl text-white leading-tight">Stratejik Merkez</h4>
+                        </div>
+                    </div>
+                    <p class="font-sans text-[#E8E4DD]/70 leading-relaxed text-[15px] md:text-base pt-1">
+                        Şehrin kalbi Eyüp'te yer alan operasyon merkezimizden, tüm sevkiyat trafiğini anlık olarak takip ediyor ve merkez yönetim disipliniyle koordine ediyoruz.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. OPERATIONAL STATS -->
+<section class="pt-24 md:pt-32 pb-12 md:pb-16 bg-[#E8E4DD] relative z-10 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         
         <!-- Section Header -->
@@ -146,108 +248,6 @@ get_header(); ?>
                         <div class="font-display font-bold text-4xl sm:text-5xl lg:text-[4.5rem] text-[#004562] group-hover:text-[#E4F7FF] transition-colors duration-500 delay-100 ease-out leading-none tracking-tight relative z-0">41</div>
                     </div>
             </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 4. OPERASYON AĞI (Asymmetric Dashboard) -->
-<section id="operasyon" class="py-24 md:py-32 bg-[#08131F] text-[#E8E4DD] relative z-10 overflow-hidden">
-    
-    <!-- Abstract Logistics SVG Background (Reused from Şirket Bilgileri) -->
-    <div class="absolute inset-0 z-0 pointer-events-none opacity-20 flex items-center justify-center">
-        <svg width="100%" height="100%" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" class="w-full h-full object-cover">
-            <g stroke="#11C6DB" stroke-width="0.5" fill="none">
-                <!-- Global Logistics Network Lines -->
-                <path d="M-200,400 C200,200 400,600 700,400 S1100,200 1600,400" />
-                <path d="M-200,600 C100,800 500,200 900,500 S1200,700 1600,600" />
-                <path d="M100,100 C300,300 200,700 500,600 S800,100 1100,300" />
-                
-                <!-- Hubs / Nodes -->
-                <circle cx="240" cy="350" r="3.5" fill="#11C6DB" />
-                <circle cx="700" cy="400" r="5" fill="none" stroke-width="1.5"/>
-                <circle cx="700" cy="400" r="2" fill="#11C6DB" />
-                <circle cx="900" cy="500" r="3.5" fill="#11C6DB" />
-                <circle cx="460" cy="610" r="2.5" fill="#11C6DB" />
-                <circle cx="1040" cy="310" r="3" fill="#11C6DB" />
-                
-                <!-- Connecting dotted routes between hubs -->
-                <line x1="240" y1="350" x2="700" y2="400" stroke-dasharray="3 6" />
-                <line x1="700" y1="400" x2="900" y2="500" stroke-dasharray="3 6" />
-                <line x1="240" y1="350" x2="460" y2="610" stroke-dasharray="3 6" />
-                <line x1="700" y1="400" x2="1040" y2="310" stroke-dasharray="3 6" />
-                
-                <!-- Circular radar/sonar rings at the main hub -->
-                <circle cx="700" cy="400" r="40" stroke-dasharray="1 10" opacity="0.5"/>
-                <circle cx="700" cy="400" r="80" stroke-dasharray="2 15" opacity="0.3"/>
-                <circle cx="700" cy="400" r="140" stroke-dasharray="4 20" opacity="0.1"/>
-            </g>
-        </svg>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-6 relative z-10">
-        
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start h-auto">
-            
-            <!-- Left Panel: Visual Focus (66%) -->
-            <div class="lg:col-span-8 h-[500px] lg:h-[700px] lg:sticky lg:top-32 rounded-[2rem] overflow-hidden relative group gsap-fade-up shadow-2xl transform-gpu" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/gallery_warehouse.jpg" alt="Dem-Tor Operasyon" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 transform-gpu" />
-                
-                <!-- Dark Overlay for Text Readability -->
-                <div class="absolute inset-0 bg-black/40 mix-blend-multiply pointer-events-none transition-opacity duration-700 group-hover:bg-black/50"></div>
-                <div class="absolute inset-0 bg-gradient-to-t from-[#08131F]/90 via-[#08131F]/40 to-transparent pointer-events-none"></div>
-                
-                <!-- Embedded Header Section -->
-                <div class="absolute bottom-0 left-0 w-full p-8 md:p-12 z-10 pointer-events-none">
-                    <h2 class="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-4">Sevkiyatın Akıllı Yüzü</h2>
-                    <p class="font-sans text-lg md:text-xl text-white/90 font-light leading-relaxed max-w-2xl drop-shadow-md">
-                        Dem-Tor olarak lojistiği sadece bir taşıma süreci değil, bir ağ yönetimi olarak görüyoruz, ticaretin kesintisiz akışını sağlıyoruz.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Right Panel: Data Focus (34%) -->
-            <div class="lg:col-span-4 flex flex-col gap-10 lg:gap-12 lg:pb-32 justify-center">
-                
-                <!-- Item 01 -->
-                <div class="op-card gsap-fade-up flex flex-col items-start gap-3 group">
-                    <div class="flex items-start justify-between w-full border-b border-white/5 pb-4">
-                        <div>
-                            <span class="font-mono text-[10px] md:text-xs text-[#11C6DB] uppercase tracking-widest block mb-2 opacity-80">Dijital Rota Yönetimi</span>
-                            <h4 class="font-display text-xl md:text-2xl text-white leading-tight">Planlama Disiplini</h4>
-                        </div>
-                    </div>
-                    <p class="font-sans text-[#E8E4DD]/70 leading-relaxed text-[15px] md:text-base pt-1">
-                        Hata payını minimize eden sistem altyapımız sayesinde, her sabah en verimli dağıtım rotasını saniyeler içinde kurguluyoruz. Ticaretin hızını, veriye dayalı planlama disiplinimizle belirliyoruz.
-                    </p>
-                </div>
-
-                <!-- Item 02 -->
-                <div class="op-card gsap-fade-up flex flex-col items-start gap-3 group">
-                    <div class="flex items-start justify-between w-full border-b border-white/5 pb-4">
-                        <div>
-                            <span class="font-mono text-[10px] md:text-xs text-[#11C6DB] uppercase tracking-widest block mb-2 opacity-80">Geniş Erişim Ağı</span>
-                            <h4 class="font-display text-xl md:text-2xl text-white leading-tight">Fiziksel Kapasite</h4>
-                        </div>
-                    </div>
-                    <p class="font-sans text-[#E8E4DD]/70 leading-relaxed text-[15px] md:text-base pt-1">
-                        Bölge genelindeki aktif noktalarımıza, hijyen ve soğuk zincir standartlarına uygun modern filomuzla kesintisiz ulaşıyoruz. Her sevkiyat, operasyonel gücümüzün bir parçasıdır.
-                    </p>
-                </div>
-
-                <!-- Item 03 -->
-                <div class="op-card gsap-fade-up flex flex-col items-start gap-3 group">
-                    <div class="flex items-start justify-between w-full border-b border-white/5 pb-4">
-                        <div>
-                            <span class="font-mono text-[10px] md:text-xs text-[#11C6DB] uppercase tracking-widest block mb-2 opacity-80">Lojistik Üssü: Eyüp</span>
-                            <h4 class="font-display text-xl md:text-2xl text-white leading-tight">Stratejik Merkez</h4>
-                        </div>
-                    </div>
-                    <p class="font-sans text-[#E8E4DD]/70 leading-relaxed text-[15px] md:text-base pt-1">
-                        Şehrin kalbi Eyüp'te yer alan operasyon merkezimizden, tüm sevkiyat trafiğini anlık olarak takip ediyor ve merkez yönetim disipliniyle koordine ediyoruz.
-                    </p>
-                </div>
-
             </div>
         </div>
     </div>
