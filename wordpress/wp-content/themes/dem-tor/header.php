@@ -86,10 +86,10 @@
 </header>
 
 <!-- Cinematic Mobile Fullscreen Menu -->
-<div id="mobile-menu-overlay" class="fixed inset-0 z-[100] bg-[#002366] text-[#E8E4DD] flex flex-col justify-center items-center hidden" style="transform: translateY(-100%);">
+<div id="mobile-menu-overlay" class="fixed inset-0 z-[100] bg-black/95 backdrop-blur-lg text-[#E8E4DD] flex flex-col justify-between items-center hidden" style="transform: translateY(-100%);">
     
     <!-- Background Texture -->
-    <div class="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay">
+    <div class="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay z-0">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
             <filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter>
             <rect width="100%" height="100%" filter="url(#noiseFilter)"/>
@@ -97,35 +97,40 @@
     </div>
 
     <!-- Close Button -->
-    <button id="mobile-menu-close" class="absolute top-6 right-6 text-white p-2 z-20 hover:rotate-90 transition-transform duration-500">
+    <button id="mobile-menu-close" class="absolute top-8 right-6 text-white p-2 z-[120] hover:rotate-90 transition-transform duration-500">
         <?php echo get_lucide_icon('x', 'w-10 h-10'); ?>
     </button>
     
+    <!-- Top Spacer for flex layout -->
+    <div class="w-full h-24 shrink-0"></div>
+
     <!-- Menu Links -->
-    <nav class="flex flex-col items-center gap-10 w-full px-6 relative z-10">
-        <a href="#kurumsal" class="mobile-nav-link font-display text-[2.75rem] font-bold text-white hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-            Kurumsal
-            <span class="absolute -bottom-3 left-0 w-0 h-1 bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
-        </a>
-        <a href="#markalar" class="mobile-nav-link font-display text-[2.75rem] font-bold text-white hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-            Markalar
-            <span class="absolute -bottom-3 left-0 w-0 h-1 bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
-        </a>
-        <a href="#operasyon" class="mobile-nav-link font-display text-[2.75rem] font-bold text-white hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-            Operasyon
-            <span class="absolute -bottom-3 left-0 w-0 h-1 bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
-        </a>
-        <a href="#iletisim" class="mobile-nav-link font-display text-[2.75rem] font-bold text-white hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-            İletişim
-            <span class="absolute -bottom-3 left-0 w-0 h-1 bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
-        </a>
-    </nav>
+    <div class="flex-1 flex flex-col justify-center w-full relative z-10">
+        <nav class="flex flex-col items-center gap-8 w-full px-6">
+            <a href="#kurumsal" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                Kurumsal
+                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
+            </a>
+            <a href="#markalar" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                Markalar
+                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
+            </a>
+            <a href="#operasyon" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                Operasyon
+                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
+            </a>
+            <a href="#iletisim" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                İletişim
+                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
+            </a>
+        </nav>
+    </div>
 
     <!-- Menu Footer Info -->
-    <div id="mobile-menu-footer" class="absolute bottom-12 text-center flex flex-col items-center opacity-0 relative z-10">
+    <div id="mobile-menu-footer" class="w-full text-center flex flex-col items-center opacity-0 relative z-10 pb-16 shrink-0">
         <p class="font-mono text-xs tracking-[0.2em] uppercase mb-4 text-[#11C6DB]">Operasyon Hattı</p>
-        <a href="tel:+902122897317" class="font-sans text-2xl font-bold mb-2 text-white hover:opacity-70 transition-opacity tracking-tight">+90 212 289 73 17</a>
-        <a href="mailto:info@dem-tor.com.tr" class="font-sans text-lg text-white/80 hover:text-white transition-opacity">info@dem-tor.com.tr</a>
+        <a href="tel:+902122897317" class="font-sans text-xl font-medium mb-2 text-white hover:opacity-70 transition-opacity tracking-tight">+90 212 289 73 17</a>
+        <a href="mailto:info@dem-tor.com.tr" class="font-sans text-base text-white/70 hover:text-white transition-opacity">info@dem-tor.com.tr</a>
     </div>
 </div>
 

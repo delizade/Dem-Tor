@@ -49,7 +49,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </style>
 
 <link rel='stylesheet' id='demtor-fonts-css' href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&#038;family=Roboto+Slab:wght@500;800&#038;family=Syne:wght@400;700;800&#038;family=Outfit:wght@300;400;500;600&#038;family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&#038;family=DM+Serif+Display:ital@0;1&#038;family=Space+Grotesk:wght@300;400;500;600;700&#038;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&#038;display=swap' type='text/css' media='all' />
-<link rel='stylesheet' id='demtor-style-css' href='style.css?v=1777491904' type='text/css' media='all' />
+<link rel='stylesheet' id='demtor-style-css' href='style.css?v=1777492277' type='text/css' media='all' />
 <link rel='stylesheet' id='swiper-css-css' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?ver=11.0.5' type='text/css' media='all' />
 <link rel='stylesheet' id='glightbox-css-css' href='https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css?ver=3.3.0' type='text/css' media='all' />
 <link rel="https://api.w.org/" href="#/index.php?rest_route=/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="#/xmlrpc.php?rsd" />
@@ -129,10 +129,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </header>
 
 <!-- Cinematic Mobile Fullscreen Menu -->
-<div id="mobile-menu-overlay" class="fixed inset-0 z-[100] bg-[#002366] text-[#E8E4DD] flex flex-col justify-center items-center hidden" style="transform: translateY(-100%);">
+<div id="mobile-menu-overlay" class="fixed inset-0 z-[100] bg-black/95 backdrop-blur-lg text-[#E8E4DD] flex flex-col justify-between items-center hidden" style="transform: translateY(-100%);">
     
     <!-- Background Texture -->
-    <div class="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay">
+    <div class="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay z-0">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
             <filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter>
             <rect width="100%" height="100%" filter="url(#noiseFilter)"/>
@@ -140,34 +140,39 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     </div>
 
     <!-- Close Button -->
-    <button id="mobile-menu-close" class="absolute top-6 right-6 text-white p-2 z-20 hover:rotate-90 transition-transform duration-500">
+    <button id="mobile-menu-close" class="absolute top-8 right-6 text-white p-2 z-[120] hover:rotate-90 transition-transform duration-500">
             </button>
     
+    <!-- Top Spacer for flex layout -->
+    <div class="w-full h-24 shrink-0"></div>
+
     <!-- Menu Links -->
-    <nav class="flex flex-col items-center gap-10 w-full px-6 relative z-10">
-        <a href="#kurumsal" class="mobile-nav-link font-display text-[2.75rem] font-bold text-white hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-            Kurumsal
-            <span class="absolute -bottom-3 left-0 w-0 h-1 bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
-        </a>
-        <a href="#markalar" class="mobile-nav-link font-display text-[2.75rem] font-bold text-white hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-            Markalar
-            <span class="absolute -bottom-3 left-0 w-0 h-1 bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
-        </a>
-        <a href="#operasyon" class="mobile-nav-link font-display text-[2.75rem] font-bold text-white hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-            Operasyon
-            <span class="absolute -bottom-3 left-0 w-0 h-1 bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
-        </a>
-        <a href="#iletisim" class="mobile-nav-link font-display text-[2.75rem] font-bold text-white hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-            İletişim
-            <span class="absolute -bottom-3 left-0 w-0 h-1 bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
-        </a>
-    </nav>
+    <div class="flex-1 flex flex-col justify-center w-full relative z-10">
+        <nav class="flex flex-col items-center gap-8 w-full px-6">
+            <a href="#kurumsal" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                Kurumsal
+                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
+            </a>
+            <a href="#markalar" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                Markalar
+                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
+            </a>
+            <a href="#operasyon" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                Operasyon
+                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
+            </a>
+            <a href="#iletisim" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                İletişim
+                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
+            </a>
+        </nav>
+    </div>
 
     <!-- Menu Footer Info -->
-    <div id="mobile-menu-footer" class="absolute bottom-12 text-center flex flex-col items-center opacity-0 relative z-10">
+    <div id="mobile-menu-footer" class="w-full text-center flex flex-col items-center opacity-0 relative z-10 pb-16 shrink-0">
         <p class="font-mono text-xs tracking-[0.2em] uppercase mb-4 text-[#11C6DB]">Operasyon Hattı</p>
-        <a href="tel:+902122897317" class="font-sans text-2xl font-bold mb-2 text-white hover:opacity-70 transition-opacity tracking-tight">+90 212 289 73 17</a>
-        <a href="mailto:info@dem-tor.com.tr" class="font-sans text-lg text-white/80 hover:text-white transition-opacity">info@dem-tor.com.tr</a>
+        <a href="tel:+902122897317" class="font-sans text-xl font-medium mb-2 text-white hover:opacity-70 transition-opacity tracking-tight">+90 212 289 73 17</a>
+        <a href="mailto:info@dem-tor.com.tr" class="font-sans text-base text-white/70 hover:text-white transition-opacity">info@dem-tor.com.tr</a>
     </div>
 </div>
 
@@ -721,7 +726,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                     </div>
 
                     <!-- Right Side: Google Map Box Component -->
-                    <div class="h-[350px] md:h-[420px] -mx-6 w-[calc(100%+3rem)] md:mx-0 md:w-full rounded-none md:rounded-[2rem] overflow-hidden p-0 md:p-1.5 relative group md:bg-white/20 border-y md:border md:border-white/30 md:shadow-inner md:backdrop-blur-sm mt-8 md:mt-0">
+                    <div class="h-[350px] md:h-[420px] w-screen relative left-1/2 -translate-x-1/2 md:w-full md:static md:translate-x-0 rounded-none md:rounded-[2rem] overflow-hidden p-0 md:p-1.5 group md:bg-white/20 border-y md:border md:border-white/30 md:shadow-inner md:backdrop-blur-sm mt-8 md:mt-0">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8286940828277!2d28.940540076595568!3d41.07282671545624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab65d6a2f8c5f%3A0xc6cf6d4db7a9d20c!2sMimar%20Sinan%2C%20Cendere%20Yolu%20Cd.%20No%3A49%2C%2034075%20Ey%C3%BCpsultan%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1709641151614!5m2!1sen!2str" 
                             width="100%" 
