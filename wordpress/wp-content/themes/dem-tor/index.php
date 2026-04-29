@@ -8,11 +8,12 @@ get_header(); ?>
 
 <!-- 1. HERO SECTION -->
 <section id="hero" class="relative w-full h-[100dvh] bg-[#111111] overflow-hidden flex flex-col justify-center">
-    <!-- Background Image -->
-    <div class="absolute inset-0 w-full h-full">
-        <!-- Will generate hero_fleet_sunset.jpg -->
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/hero_fleet_sunset.jpg" alt="Dem-Tor Fleet at Sunset" class="w-full h-full object-cover opacity-60 mix-blend-luminosity scale-105" />
-        <div class="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/60 to-transparent"></div>
+    <!-- Background Video -->
+    <div class="absolute inset-0 w-full h-full bg-[#111111]">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-60 mix-blend-luminosity scale-105 pointer-events-none">
+            <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/heroA.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/60 to-transparent pointer-events-none"></div>
     </div>
 
     <!-- Content: Centered -->

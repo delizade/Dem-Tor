@@ -49,7 +49,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </style>
 
 <link rel='stylesheet' id='demtor-fonts-css' href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&#038;family=Roboto+Slab:wght@500;800&#038;family=Syne:wght@400;700;800&#038;family=Outfit:wght@300;400;500;600&#038;family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&#038;family=DM+Serif+Display:ital@0;1&#038;family=Space+Grotesk:wght@300;400;500;600;700&#038;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&#038;display=swap' type='text/css' media='all' />
-<link rel='stylesheet' id='demtor-style-css' href='style.css?v=1777494608' type='text/css' media='all' />
+<link rel='stylesheet' id='demtor-style-css' href='style.css?v=1777500066' type='text/css' media='all' />
 <link rel='stylesheet' id='swiper-css-css' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?ver=11.0.5' type='text/css' media='all' />
 <link rel='stylesheet' id='glightbox-css-css' href='https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css?ver=3.3.0' type='text/css' media='all' />
 <link rel="https://api.w.org/" href="#/index.php?rest_route=/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="#/xmlrpc.php?rsd" />
@@ -181,11 +181,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 <!-- 1. HERO SECTION -->
 <section id="hero" class="relative w-full h-[100dvh] bg-[#111111] overflow-hidden flex flex-col justify-center">
-    <!-- Background Image -->
-    <div class="absolute inset-0 w-full h-full">
-        <!-- Will generate hero_fleet_sunset.jpg -->
-        <img src="assets/hero_fleet_sunset.jpg" alt="Dem-Tor Fleet at Sunset" class="w-full h-full object-cover opacity-60 mix-blend-luminosity scale-105" />
-        <div class="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/60 to-transparent"></div>
+    <!-- Background Video -->
+    <div class="absolute inset-0 w-full h-full bg-[#111111]">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-60 mix-blend-luminosity scale-105 pointer-events-none">
+            <source src="assets/videos/heroA.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/60 to-transparent pointer-events-none"></div>
     </div>
 
     <!-- Content: Centered -->
