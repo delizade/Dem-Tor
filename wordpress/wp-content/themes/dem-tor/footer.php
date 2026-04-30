@@ -19,7 +19,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 relative z-10 w-full">
                     <!-- Left Side: Conversion & Branding -->
                     <div class="flex flex-col items-center md:items-start justify-center text-center md:text-left px-6 md:px-0">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-block group hover-lift mb-6 md:mb-3">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-block group hover-lift mb-2 md:mb-1">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-10 md:h-8 w-auto object-contain transition-all duration-300 opacity-90 hover:opacity-100" />
                         </a>
                         <h3 class="font-sans text-xl md:text-xl font-bold tracking-wide text-[#004562] mb-2">Dem-Tor Gıda Meşrubat Dağıtım Ltd.Şti.</h3>
