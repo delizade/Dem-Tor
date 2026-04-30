@@ -105,19 +105,23 @@
     <div class="w-full h-24 shrink-0 relative z-10"></div>
 
     <!-- Menu Links -->
-    <div class="flex-1 flex flex-col justify-start w-full relative z-10 px-12 pt-12">
-        <nav class="flex flex-col items-center w-full divide-y divide-white/5">
-            <a href="#kurumsal" class="mobile-nav-link font-display text-2xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative block w-full py-6 text-center leading-none">
-                Kurumsal
+    <div class="flex-1 flex flex-col justify-start w-full relative z-10 px-8 pt-16">
+        <nav class="flex flex-col gap-6 w-full max-w-sm mx-auto">
+            <a href="#kurumsal" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
+                <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">01</span>
+                <span class="font-display text-4xl text-white/90 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Kurumsal</span>
             </a>
-            <a href="#operasyon" class="mobile-nav-link font-display text-2xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative block w-full py-6 text-center leading-none">
-                Lojistik & Operasyon
+            <a href="#operasyon" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
+                <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">02</span>
+                <span class="font-display text-4xl text-white/90 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Lojistik & Operasyon</span>
             </a>
-            <a href="#galeri" class="mobile-nav-link font-display text-2xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative block w-full py-6 text-center leading-none">
-                Galeri
+            <a href="#galeri" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
+                <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">03</span>
+                <span class="font-display text-4xl text-white/90 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Galeri</span>
             </a>
-            <a href="#iletisim" class="mobile-nav-link font-display text-2xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative block w-full py-6 text-center leading-none">
-                İletişim
+            <a href="#iletisim" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
+                <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">04</span>
+                <span class="font-display text-4xl text-white/90 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">İletişim</span>
             </a>
         </nav>
     </div>
@@ -125,9 +129,9 @@
     <!-- Menu Footer Info -->
     <div id="mobile-menu-footer" class="w-full text-center flex flex-col items-center opacity-0 relative z-10 pb-12 shrink-0 px-6">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-8 w-auto object-contain brightness-0 invert opacity-40 mb-6" />
-        <div class="w-full border-t border-white/10 pt-8 flex flex-row justify-center gap-8">
-            <a href="tel:+902122897317" class="font-mono text-[11px] text-white/40 hover:text-[#11C6DB] transition-colors tracking-widest">+90 212 289 73 17</a>
-            <a href="mailto:info@dem-tor.com.tr" class="font-mono text-[11px] text-white/40 hover:text-[#11C6DB] transition-opacity tracking-widest uppercase">info@dem-tor.com.tr</a>
+        <div class="w-full border-t border-white/10 pt-8 flex flex-col gap-4">
+            <a href="tel:+902122897317" class="font-sans text-sm text-white/50 hover:text-[#11C6DB] transition-colors tracking-widest font-medium">+90 212 289 73 17</a>
+            <a href="mailto:info@dem-tor.com.tr" class="font-sans text-sm text-white/50 hover:text-[#11C6DB] transition-opacity tracking-widest uppercase font-medium">info@dem-tor.com.tr</a>
         </div>
     </div>
 </div>
