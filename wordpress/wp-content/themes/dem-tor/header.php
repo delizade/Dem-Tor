@@ -108,27 +108,27 @@
     <div class="flex-1 flex flex-col justify-start w-full relative z-10 px-8 pt-12">
         <div class="w-full max-w-sm mx-auto flex flex-col items-start gap-12">
             <!-- Logo aligned with text (skipping the number and gap) -->
-            <div class="flex flex-col items-start ml-8 group">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-10 w-auto object-contain brightness-0 invert opacity-90 mb-3" />
-                <div class="w-16 h-1.5 bg-[#11C6DB]"></div>
+            <div class="inline-flex flex-col items-start ml-8 group">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-10 w-auto object-contain brightness-0 invert opacity-50 mb-4" />
+                <div class="w-full h-1 bg-white/50"></div>
             </div>
             
             <nav class="flex flex-col gap-6 w-full">
                 <a href="#kurumsal" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
                     <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">01</span>
-                    <span class="font-display text-4xl text-white/90 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Kurumsal</span>
+                    <span class="font-display text-4xl text-white/80 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Kurumsal</span>
                 </a>
                 <a href="#operasyon" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
                     <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">02</span>
-                    <span class="font-display text-4xl text-white/90 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Lojistik & Operasyon</span>
+                    <span class="font-display text-4xl text-white/80 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Lojistik & Operasyon</span>
                 </a>
                 <a href="#galeri" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
                     <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">03</span>
-                    <span class="font-display text-4xl text-white/90 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Galeri</span>
+                    <span class="font-display text-4xl text-white/80 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Galeri</span>
                 </a>
                 <a href="#iletisim" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
                     <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">04</span>
-                    <span class="font-display text-4xl text-white/90 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">İletişim</span>
+                    <span class="font-display text-4xl text-white/80 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">İletişim</span>
                 </a>
             </nav>
         </div>
@@ -138,7 +138,7 @@
     <div id="mobile-menu-footer" class="w-full text-center flex flex-col items-center opacity-0 relative z-10 pb-12 shrink-0 px-6">
         <div class="w-full border-t border-white/10 pt-8 flex flex-col gap-4">
             <a href="tel:+902122897317" class="font-sans text-sm text-white/50 hover:text-[#11C6DB] transition-colors tracking-widest font-medium">+90 212 289 73 17</a>
-            <a href="mailto:info@dem-tor.com.tr" class="font-sans text-sm text-white/50 hover:text-[#11C6DB] transition-opacity tracking-widest uppercase font-medium">info@dem-tor.com.tr</a>
+            <a href="mailto:info@dem-tor.com.tr" class="font-sans text-sm text-white/50 hover:text-[#11C6DB] transition-opacity tracking-widest font-medium">info@dem-tor.com.tr</a>
         </div>
     </div>
 </div>
