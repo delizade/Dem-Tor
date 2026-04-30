@@ -96,23 +96,20 @@
         </svg>
     </div>
 
-    <!-- Close Button -->
-    <button id="mobile-menu-close" class="absolute top-8 right-6 text-white p-2 z-[120] hover:rotate-90 transition-transform duration-500">
-        <?php echo get_lucide_icon('x', 'w-10 h-10'); ?>
-    </button>
+    <!-- Top Header -->
+    <div class="w-full h-24 flex items-center justify-between px-8 relative z-[120] shrink-0">
+        <!-- Logo Top Left -->
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-8 w-auto object-contain brightness-0 invert opacity-60" />
+        
+        <!-- Close Button Top Right -->
+        <button id="mobile-menu-close" class="text-white p-2 hover:rotate-90 transition-transform duration-500">
+            <?php echo get_lucide_icon('x', 'w-10 h-10'); ?>
+        </button>
+    </div>
     
-    <!-- Empty Top Space -->
-    <div class="w-full h-24 shrink-0 relative z-10"></div>
-
     <!-- Menu Links -->
-    <div class="flex-1 flex flex-col justify-start w-full relative z-10 px-8 pt-12">
+    <div class="flex-1 flex flex-col justify-start w-full relative z-10 px-8 pt-8">
         <div class="w-full max-w-sm mx-auto flex flex-col items-start gap-12">
-            <!-- Logo aligned with text (skipping the number and gap) -->
-            <div class="inline-flex flex-col items-start ml-8 group">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-10 w-auto object-contain brightness-0 invert opacity-50 mb-4" />
-                <div class="w-full h-1 bg-white/50"></div>
-            </div>
-            
             <nav class="flex flex-col gap-6 w-full">
                 <a href="#kurumsal" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
                     <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">01</span>
