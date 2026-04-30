@@ -107,8 +107,11 @@
     <!-- Menu Links -->
     <div class="flex-1 flex flex-col justify-start w-full relative z-10 px-8 pt-12">
         <div class="w-full max-w-sm mx-auto flex flex-col items-start gap-12">
-            <!-- Logo aligned with links -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-10 w-auto object-contain brightness-0 invert opacity-60 ml-0" />
+            <!-- Logo aligned with text (skipping the number and gap) -->
+            <div class="flex flex-col items-start ml-8 group">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-10 w-auto object-contain brightness-0 invert opacity-90 mb-3" />
+                <div class="w-16 h-1.5 bg-[#11C6DB]"></div>
+            </div>
             
             <nav class="flex flex-col gap-6 w-full">
                 <a href="#kurumsal" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
