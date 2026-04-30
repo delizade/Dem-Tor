@@ -98,34 +98,38 @@
 
     <!-- Top Header -->
     <div class="w-full h-24 flex items-center justify-between px-8 relative z-[120] shrink-0">
-        <!-- Logo Top Left -->
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-8 w-auto object-contain brightness-0 invert opacity-60" />
+        <!-- Logo aligned with menu block -->
+        <div class="flex-1 flex justify-start">
+            <div class="w-full max-w-sm mx-auto">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-8 w-auto object-contain brightness-0 invert opacity-30" />
+            </div>
+        </div>
         
         <!-- Close Button Top Right -->
-        <button id="mobile-menu-close" class="text-white p-2 hover:rotate-90 transition-transform duration-500">
-            <?php echo get_lucide_icon('x', 'w-10 h-10'); ?>
+        <button id="mobile-menu-close" class="text-white p-2 hover:rotate-90 transition-transform duration-500 relative z-[150] opacity-30">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
     </div>
     
     <!-- Menu Links -->
-    <div class="flex-1 flex flex-col justify-start w-full relative z-10 px-8 pt-8">
+    <div class="flex-1 flex flex-col justify-center w-full relative z-10 px-8">
         <div class="w-full max-w-sm mx-auto flex flex-col items-start gap-12">
             <nav class="flex flex-col gap-6 w-full">
                 <a href="#kurumsal" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
                     <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">01</span>
-                    <span class="font-display text-4xl text-white/80 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Kurumsal</span>
+                    <span class="font-display text-4xl text-white/50 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Kurumsal</span>
                 </a>
                 <a href="#operasyon" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
                     <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">02</span>
-                    <span class="font-display text-4xl text-white/80 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Lojistik & Operasyon</span>
+                    <span class="font-display text-4xl text-white/50 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Lojistik & Operasyon</span>
                 </a>
                 <a href="#galeri" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
                     <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">03</span>
-                    <span class="font-display text-4xl text-white/80 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Galeri</span>
+                    <span class="font-display text-4xl text-white/50 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">Galeri</span>
                 </a>
                 <a href="#iletisim" class="mobile-nav-link group flex items-baseline gap-4 py-2 border-b border-white/5">
                     <span class="font-mono text-[10px] text-[#11C6DB] opacity-60">04</span>
-                    <span class="font-display text-4xl text-white/80 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">İletişim</span>
+                    <span class="font-display text-4xl text-white/50 group-hover:text-[#11C6DB] transition-all duration-300 tracking-tight">İletişim</span>
                 </a>
             </nav>
         </div>
