@@ -96,6 +96,11 @@
         </svg>
     </div>
 
+    <!-- Background Truck Image -->
+    <div class="absolute inset-0 z-0 pointer-events-none opacity-10">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/truck.png" alt="Truck background" class="w-full h-full object-cover" />
+    </div>
+
     <!-- Close Button -->
     <button id="mobile-menu-close" class="absolute top-8 right-6 text-white p-2 z-[120] hover:rotate-90 transition-transform duration-500">
         <?php echo get_lucide_icon('x', 'w-10 h-10'); ?>
