@@ -186,7 +186,7 @@ get_header(); ?>
         <!-- Section Header -->
         <div class="text-center mb-16 max-w-4xl mx-auto gsap-fade-up flex flex-col items-center">
             <!-- Truck Image (Transparent, no box) -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/truck.jpg" alt="Dem-Tor Araç Filosu" class="w-full md:w-3/4 h-auto object-contain mb-8 md:mb-12 pointer-events-none" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/truck-bg.png" alt="Dem-Tor Araç Filosu" class="w-full md:w-3/4 h-auto object-contain mb-8 md:mb-12 pointer-events-none" />
 
             <h2 class="text-4xl md:text-5xl text-[#002366] mb-6 tracking-tight w-full">Gücümüz Rakamlarda</h2>
             <p class="font-sans text-xl text-[#002366]/80 leading-relaxed font-medium">
