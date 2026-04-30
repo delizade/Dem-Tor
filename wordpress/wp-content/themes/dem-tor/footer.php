@@ -20,7 +20,7 @@
                     <!-- Left Side: Conversion & Branding -->
                     <div class="flex flex-col items-center md:items-start justify-center text-center md:text-left px-6 md:px-0">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-block group hover-lift mb-6 md:mb-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-14 md:h-10 w-auto object-contain transition-all duration-300" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-10 md:h-8 w-auto object-contain transition-all duration-300 opacity-90 hover:opacity-100" />
                         </a>
                         <h3 class="font-sans text-xl md:text-xl font-bold tracking-wide text-[#004562] mb-2">Dem-Tor Gıda Meşrubat Dağıtım Ltd.Şti.</h3>
                         <p class="font-mono text-[#004562]/60 text-xs md:text-sm uppercase tracking-widest mb-4 md:mb-10">1992'den Beri Güvenle.</p>
@@ -68,20 +68,20 @@
                         </iframe>
                     </div>
                 </div>
-            </div>
-
-            <!-- Mobile Map Box Component (Direct child of container, completely outside grid) -->
-            <div class="block lg:hidden relative w-full h-[350px] border-y border-[#11C6DB]/30 overflow-hidden mb-12 mt-8 z-0">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8286940828277!2d28.940540076595568!3d41.07282671545624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab65d6a2f8c5f%3A0xc6cf6d4db7a9d20c!2sMimar%20Sinan%2C%20Cendere%20Yolu%20Cd.%20No%3A49%2C%2034075%20Ey%C3%BCpsultan%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1709641151614!5m2!1sen!2str" 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0; filter: grayscale(100%) contrast(1.1) brightness(0.9);" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"
-                    class="w-full h-full relative z-0">
-                </iframe>
+                
+                <!-- Mobile Map Box Component (Now inside footer-card to fix wave cutoff) -->
+                <div class="block lg:hidden relative w-full h-[300px] border-y border-[#11C6DB]/30 overflow-hidden mt-12 mb-4 z-0">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8286940828277!2d28.940540076595568!3d41.07282671545624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab65d6a2f8c5f%3A0xc6cf6d4db7a9d20c!2sMimar%20Sinan%2C%20Cendere%20Yolu%20Cd.%20No%3A49%2C%2034075%20Ey%C3%BCpsultan%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1709641151614!5m2!1sen!2str" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; filter: grayscale(100%) contrast(1.1) brightness(0.9);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full h-full relative z-0">
+                    </iframe>
+                </div>
             </div>
 
             <!-- Bottom Bar: Minimalist & Very Faint Gray on Beige -->
