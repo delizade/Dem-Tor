@@ -22,7 +22,7 @@
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-block group hover-lift mb-2 md:mb-1">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-10 md:h-8 w-auto object-contain transition-all duration-300 opacity-90 hover:opacity-100" />
                         </a>
-                        <h3 class="font-sans text-xl md:text-xl font-bold tracking-wide text-[#004562] mb-2">Dem-Tor Gıda Meşrubat Dağıtım Ltd.Şti.</h3>
+                        <h3 class="font-sans text-lg md:text-lg font-bold tracking-wide text-[#004562] mb-2">Dem-Tor Gıda Meşrubat Dağıtım Ltd.Şti.</h3>
                         <p class="font-mono text-[#004562]/60 text-xs md:text-sm uppercase tracking-widest mb-4 md:mb-10">1992'den Beri Güvenle.</p>
                         
                         <!-- Sophisticated Contact Design (Clean Version) -->

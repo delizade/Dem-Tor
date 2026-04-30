@@ -43,13 +43,13 @@ get_header(); ?>
 <section id="kurumsal" class="py-24 md:py-32 bg-[#E8E4DD] text-[#111111] relative z-10">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
-            <div class="gsap-fade-up order-2 lg:order-1">
+            <div class="gsap-fade-up order-2 lg:order-1 flex flex-col items-center justify-center text-center h-full">
                 <!-- Desktop Title (Hidden on Mobile) -->
-                <h2 class="hidden md:block font-display text-4xl md:text-5xl lg:text-6xl text-[#002366] mb-8">
+                <h2 class="hidden md:block font-display text-4xl md:text-5xl lg:text-6xl text-[#002366] mb-8 text-center">
                     30 Yıllık Güven, <br/>
                     Profesyonel Dağıtım
                 </h2>
-                <div class="font-sans text-lg md:text-xl text-[#111111]/80 font-light leading-relaxed space-y-6">
+                <div class="font-sans text-lg md:text-xl text-[#111111]/80 font-light leading-relaxed space-y-6 text-center max-w-lg mx-auto">
                     <p>Dem-Tor Gıda Meşrubat olarak, Eyüp merkezli tesislerimizde operasyonel mükemmelliği hedefliyoruz.</p>
                     <p>İdari yönetim, gelişmiş soğuk hava depolama ve hızlı sevkiyat birimlerimizle ticaretin kesintisiz akmasını sağlıyoruz.</p>
                 </div>
