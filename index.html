@@ -49,7 +49,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </style>
 
 <link rel='stylesheet' id='demtor-fonts-css' href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&#038;family=Roboto+Slab:wght@500;800&#038;family=Syne:wght@400;700;800&#038;family=Outfit:wght@300;400;500;600&#038;family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&#038;family=DM+Serif+Display:ital@0;1&#038;family=Space+Grotesk:wght@300;400;500;600;700&#038;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&#038;display=swap' type='text/css' media='all' />
-<link rel='stylesheet' id='demtor-style-css' href='style.css?v=1777508072' type='text/css' media='all' />
+<link rel='stylesheet' id='demtor-style-css' href='style.css?v=1777508813' type='text/css' media='all' />
 <link rel='stylesheet' id='swiper-css-css' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?ver=11.0.5' type='text/css' media='all' />
 <link rel='stylesheet' id='glightbox-css-css' href='https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css?ver=3.3.0' type='text/css' media='all' />
 <link rel="https://api.w.org/" href="#/index.php?rest_route=/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="#/xmlrpc.php?rsd" />
@@ -103,8 +103,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             <a href="#kurumsal" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">Kurumsal</a>
-            <a href="#markalar" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">Markalar</a>
-            <a href="#operasyon" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">Operasyon</a>
+            <a href="#operasyon" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">Lojistik & Operasyon</a>
+            <a href="#galeri" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">Galeri</a>
             <a href="#iletisim" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">İletişim</a>
         </nav>
 
@@ -153,12 +153,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 Kurumsal
                 <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
             </a>
-            <a href="#markalar" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-                Markalar
+            <a href="#operasyon" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                Lojistik & Operasyon
                 <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
             </a>
-            <a href="#operasyon" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-                Operasyon
+            <a href="#galeri" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                Galeri
                 <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
             </a>
             <a href="#iletisim" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
@@ -426,7 +426,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </section>
 
 <!-- 4.5. INFINITE MEDIA CAROUSEL (BENTO GRID ARCHITECTURE) -->
-<section class="pt-0 pb-12 md:pb-16 bg-[#E8E4DD] relative z-10 cursor-grab active:cursor-grabbing block">
+<section id="galeri" class="pt-0 pb-12 md:pb-16 bg-[#E8E4DD] relative z-10 cursor-grab active:cursor-grabbing block">
     
     <!-- Swiper Container -->
     <div class="swiper swiper-ticker media-carousel w-full overflow-hidden relative z-10">

@@ -254,7 +254,7 @@ get_header(); ?>
 </section>
 
 <!-- 4.5. INFINITE MEDIA CAROUSEL (BENTO GRID ARCHITECTURE) -->
-<section class="pt-0 pb-12 md:pb-16 bg-[#E8E4DD] relative z-10 cursor-grab active:cursor-grabbing block">
+<section id="galeri" class="pt-0 pb-12 md:pb-16 bg-[#E8E4DD] relative z-10 cursor-grab active:cursor-grabbing block">
     
     <!-- Swiper Container -->
     <div class="swiper swiper-ticker media-carousel w-full overflow-hidden relative z-10">

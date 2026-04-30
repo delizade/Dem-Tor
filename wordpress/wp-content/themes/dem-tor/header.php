@@ -59,8 +59,8 @@
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             <a href="#kurumsal" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">Kurumsal</a>
-            <a href="#markalar" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">Markalar</a>
-            <a href="#operasyon" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">Operasyon</a>
+            <a href="#operasyon" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">Lojistik & Operasyon</a>
+            <a href="#galeri" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">Galeri</a>
             <a href="#iletisim" class="text-white/80 hover:text-white transition-colors duration-200 text-[15px] font-medium tracking-wide nav-link relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-current after:transition-all after:duration-300">İletişim</a>
         </nav>
 
@@ -111,12 +111,12 @@
                 Kurumsal
                 <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
             </a>
-            <a href="#markalar" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-                Markalar
+            <a href="#operasyon" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                Lojistik & Operasyon
                 <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
             </a>
-            <a href="#operasyon" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
-                Operasyon
+            <a href="#galeri" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+                Galeri
                 <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
             </a>
             <a href="#iletisim" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
