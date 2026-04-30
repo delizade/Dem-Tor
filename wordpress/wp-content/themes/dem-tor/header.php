@@ -101,13 +101,11 @@
         <?php echo get_lucide_icon('x', 'w-10 h-10'); ?>
     </button>
     
-    <!-- Top Header Area (Logo) -->
-    <div class="w-full h-32 shrink-0 flex items-center justify-center relative z-10">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-6 w-auto object-contain brightness-0 invert opacity-60" />
-    </div>
+    <!-- Empty Top Space -->
+    <div class="w-full h-24 shrink-0 relative z-10"></div>
 
     <!-- Menu Links -->
-    <div class="flex-1 flex flex-col justify-center w-full relative z-10 px-12">
+    <div class="flex-1 flex flex-col justify-start w-full relative z-10 px-12 pt-12">
         <nav class="flex flex-col items-center w-full divide-y divide-white/5">
             <a href="#kurumsal" class="mobile-nav-link font-display text-2xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative block w-full py-6 text-center leading-none">
                 Kurumsal
@@ -126,6 +124,7 @@
 
     <!-- Menu Footer Info -->
     <div id="mobile-menu-footer" class="w-full text-center flex flex-col items-center opacity-0 relative z-10 pb-12 shrink-0 px-6">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-8 w-auto object-contain brightness-0 invert opacity-40 mb-6" />
         <div class="w-full border-t border-white/10 pt-8 flex flex-row justify-center gap-8">
             <a href="tel:+902122897317" class="font-mono text-[11px] text-white/40 hover:text-[#11C6DB] transition-colors tracking-widest">+90 212 289 73 17</a>
             <a href="mailto:info@dem-tor.com.tr" class="font-mono text-[11px] text-white/40 hover:text-[#11C6DB] transition-opacity tracking-widest uppercase">info@dem-tor.com.tr</a>
