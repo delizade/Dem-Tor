@@ -96,9 +96,9 @@
         </svg>
     </div>
 
-    <!-- Background Truck Image -->
-    <div class="absolute inset-0 z-0 pointer-events-none opacity-10">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/truck.png" alt="Truck background" class="w-full h-full object-cover" />
+    <!-- Truck Background -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none z-0 flex items-center justify-center overflow-hidden">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/truck.png" alt="Truck Background" class="w-full h-auto object-contain scale-40 translate-y-32" />
     </div>
 
     <!-- Close Button -->
