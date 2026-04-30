@@ -101,36 +101,35 @@
         <?php echo get_lucide_icon('x', 'w-10 h-10'); ?>
     </button>
     
-    <!-- Top Spacer for flex layout -->
-    <div class="w-full h-24 shrink-0"></div>
+    <!-- Top Header Area (Logo) -->
+    <div class="w-full h-32 shrink-0 flex items-center justify-center relative z-10">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/demtor-logo-sm.png" alt="Dem-Tor Logo" class="h-6 w-auto object-contain brightness-0 invert opacity-60" />
+    </div>
 
     <!-- Menu Links -->
-    <div class="flex-1 flex flex-col justify-center w-full relative z-10">
-        <nav class="flex flex-col items-center gap-8 w-full px-6">
-            <a href="#kurumsal" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+    <div class="flex-1 flex flex-col justify-center w-full relative z-10 px-12">
+        <nav class="flex flex-col items-center w-full divide-y divide-white/5">
+            <a href="#kurumsal" class="mobile-nav-link font-display text-2xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative block w-full py-6 text-center leading-none">
                 Kurumsal
-                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
             </a>
-            <a href="#operasyon" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+            <a href="#operasyon" class="mobile-nav-link font-display text-2xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative block w-full py-6 text-center leading-none">
                 Lojistik & Operasyon
-                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
             </a>
-            <a href="#galeri" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+            <a href="#galeri" class="mobile-nav-link font-display text-2xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative block w-full py-6 text-center leading-none">
                 Galeri
-                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
             </a>
-            <a href="#iletisim" class="mobile-nav-link font-display text-4xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative inline-block group text-center leading-none">
+            <a href="#iletisim" class="mobile-nav-link font-display text-2xl font-normal text-white/90 hover:text-[#11C6DB] transition-colors relative block w-full py-6 text-center leading-none">
                 İletişim
-                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#11C6DB] transition-all duration-500 group-hover:w-full"></span>
             </a>
         </nav>
     </div>
 
     <!-- Menu Footer Info -->
-    <div id="mobile-menu-footer" class="w-full text-center flex flex-col items-center opacity-0 relative z-10 pb-16 shrink-0">
-        <p class="font-mono text-xs tracking-[0.2em] uppercase mb-4 text-[#11C6DB]">Operasyon Hattı</p>
-        <a href="tel:+902122897317" class="font-sans text-xl font-medium mb-2 text-white hover:opacity-70 transition-opacity tracking-tight">+90 212 289 73 17</a>
-        <a href="mailto:info@dem-tor.com.tr" class="font-sans text-base text-white/70 hover:text-white transition-opacity">info@dem-tor.com.tr</a>
+    <div id="mobile-menu-footer" class="w-full text-center flex flex-col items-center opacity-0 relative z-10 pb-12 shrink-0 px-6">
+        <div class="w-full border-t border-white/10 pt-8 flex flex-row justify-center gap-8">
+            <a href="tel:+902122897317" class="font-mono text-[11px] text-white/40 hover:text-[#11C6DB] transition-colors tracking-widest">+90 212 289 73 17</a>
+            <a href="mailto:info@dem-tor.com.tr" class="font-mono text-[11px] text-white/40 hover:text-[#11C6DB] transition-opacity tracking-widest uppercase">info@dem-tor.com.tr</a>
+        </div>
     </div>
 </div>
 
