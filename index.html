@@ -49,7 +49,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </style>
 
 <link rel='stylesheet' id='demtor-fonts-css' href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&#038;family=Roboto+Slab:wght@500;800&#038;family=Syne:wght@400;700;800&#038;family=Outfit:wght@300;400;500;600&#038;family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&#038;family=DM+Serif+Display:ital@0;1&#038;family=Space+Grotesk:wght@300;400;500;600;700&#038;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&#038;display=swap' type='text/css' media='all' />
-<link rel='stylesheet' id='demtor-style-css' href='style.css?v=1777507468' type='text/css' media='all' />
+<link rel='stylesheet' id='demtor-style-css' href='style.css?v=1777507623' type='text/css' media='all' />
 <link rel='stylesheet' id='swiper-css-css' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?ver=11.0.5' type='text/css' media='all' />
 <link rel='stylesheet' id='glightbox-css-css' href='https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css?ver=3.3.0' type='text/css' media='all' />
 <link rel="https://api.w.org/" href="#/index.php?rest_route=/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="#/xmlrpc.php?rsd" />
@@ -816,6 +816,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade"
+                            tabindex="-1"
                             class="relative z-0 w-full h-full object-cover transition-all duration-700 group-hover:filter-none md:rounded-[1.75rem]">
                         </iframe>
                     </div>
@@ -831,6 +832,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade"
+                        tabindex="-1"
                         class="w-full h-full relative z-0">
                     </iframe>
                 </div>
@@ -863,6 +865,12 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             gsap.registerPlugin(ScrollTrigger);
+
+            // --- Reset Scroll Position on Load ---
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+            }
+            window.scrollTo(0, 0);
 
             // --- Initialize Lenis Smooth Scroll ---
             const lenis = new Lenis({
@@ -1066,7 +1074,11 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
             });
 
             // Initialize first tab
-            if(tabs.length > 0) tabs[0].click();
+            if(tabs.length > 0) {
+                tabs[0].click();
+                // Ensure we stay at the top after initial DOM paints and clicks
+                setTimeout(() => window.scrollTo(0, 0), 50);
+            }
 
             // Handle window resize for dynamic height
             window.addEventListener('resize', () => {

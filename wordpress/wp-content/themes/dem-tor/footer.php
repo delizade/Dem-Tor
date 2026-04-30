@@ -64,6 +64,7 @@
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade"
+                            tabindex="-1"
                             class="relative z-0 w-full h-full object-cover transition-all duration-700 group-hover:filter-none md:rounded-[1.75rem]">
                         </iframe>
                     </div>
@@ -79,6 +80,7 @@
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade"
+                        tabindex="-1"
                         class="w-full h-full relative z-0">
                     </iframe>
                 </div>
@@ -97,6 +99,12 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             gsap.registerPlugin(ScrollTrigger);
+
+            // --- Reset Scroll Position on Load ---
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+            }
+            window.scrollTo(0, 0);
 
             // --- Initialize Lenis Smooth Scroll ---
             const lenis = new Lenis({
@@ -300,7 +308,11 @@
             });
 
             // Initialize first tab
-            if(tabs.length > 0) tabs[0].click();
+            if(tabs.length > 0) {
+                tabs[0].click();
+                // Ensure we stay at the top after initial DOM paints and clicks
+                setTimeout(() => window.scrollTo(0, 0), 50);
+            }
 
             // Handle window resize for dynamic height
             window.addEventListener('resize', () => {
