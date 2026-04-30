@@ -184,8 +184,14 @@ get_header(); ?>
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         
         <!-- Section Header -->
-        <div class="text-center mb-16 max-w-3xl mx-auto gsap-fade-up">
-            <h2 class="text-4xl md:text-5xl text-[#002366] mb-6 tracking-tight">Gücümüz Rakamlarda</h2>
+        <div class="text-center mb-16 max-w-4xl mx-auto gsap-fade-up flex flex-col items-center">
+            <!-- Truck Image -->
+            <div class="w-full aspect-[16/9] md:aspect-[21/9] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl mb-12 relative group">
+                <div class="absolute inset-0 bg-[#002366]/5 mix-blend-overlay z-10 pointer-events-none"></div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/truck.jpg" alt="Dem-Tor Araç Filosu" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 z-0" />
+            </div>
+
+            <h2 class="text-4xl md:text-5xl text-[#002366] mb-6 tracking-tight w-full">Gücümüz Rakamlarda</h2>
             <p class="font-sans text-xl text-[#002366]/80 leading-relaxed font-medium">
                 İstanbul'un her noktasına ulaşan geniş araç filomuz ve deneyimli kadromuzla,<br class="hidden md:block"/>
                 tedarik zincirinizin en güçlü halkası olmaya devam ediyoruz.
