@@ -40,7 +40,7 @@ get_header(); ?>
 </section>
 
 <!-- 2. THE HERITAGE -->
-<section id="kurumsal" class="py-24 md:py-32 bg-[#E8E4DD] text-[#111111] relative z-10">
+<section id="kurumsal" class="pt-24 pb-12 md:py-32 bg-[#E8E4DD] text-[#111111] relative z-10">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <div class="gsap-fade-up order-2 lg:order-1 flex flex-col items-center justify-center text-center h-full">
