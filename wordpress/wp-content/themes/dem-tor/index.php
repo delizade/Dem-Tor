@@ -185,8 +185,28 @@ get_header(); ?>
         
         <!-- Section Header -->
         <div class="text-center mb-16 max-w-4xl mx-auto gsap-fade-up flex flex-col items-center">
-            <!-- Truck Image (Transparent, no box) -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/truck-bg.png" alt="Dem-Tor Araç Filosu" class="w-full md:w-3/4 h-auto object-contain mb-8 md:mb-12 pointer-events-none" />
+            <!-- Dynamic Vector Background & Truck Image -->
+            <div class="relative w-full md:w-3/4 flex items-center justify-center mb-8 md:mb-16 group">
+                
+                <!-- Animated Abstract Vector Background (Radar/Target Rings) -->
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+                    <svg viewBox="0 0 500 500" class="w-full max-w-[500px] h-full max-h-[500px] opacity-[0.15] text-[#002366] transition-opacity duration-700 group-hover:opacity-30">
+                        <!-- Outer rotating dashed ring -->
+                        <circle cx="250" cy="250" r="230" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="10 20" class="animate-spin origin-center" style="animation-duration: 40s;" />
+                        <!-- Middle rotating dotted ring (reverse) -->
+                        <circle cx="250" cy="250" r="180" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="1 25" stroke-linecap="round" class="animate-spin origin-center" style="animation-duration: 30s; animation-direction: reverse;" />
+                        <!-- Inner pulsing solid ring -->
+                        <circle cx="250" cy="250" r="130" fill="none" stroke="currentColor" stroke-width="1" class="animate-pulse" style="animation-duration: 3s;" />
+                        <!-- Central target marks -->
+                        <path d="M250 100 L250 120 M250 380 L250 400 M100 250 L120 250 M380 250 L400 250" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <!-- Inner delicate ring -->
+                        <circle cx="250" cy="250" r="70" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4 4" class="animate-spin origin-center" style="animation-duration: 60s;" />
+                    </svg>
+                </div>
+
+                <!-- Transparent Truck Image -->
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/truck.png" alt="Dem-Tor Araç Filosu" class="relative z-10 w-full h-auto object-contain pointer-events-none drop-shadow-2xl transition-transform duration-1000 ease-out group-hover:scale-105" />
+            </div>
 
             <h2 class="text-4xl md:text-5xl text-[#002366] mb-6 tracking-tight w-full">Gücümüz Rakamlarda</h2>
             <p class="font-sans text-xl text-[#002366]/80 leading-relaxed font-medium">
